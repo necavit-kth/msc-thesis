@@ -2,11 +2,11 @@
 
 % Class of the document: KOMA Script Article
 %   Options: 12 points font, A4 paper, bibliography in ToC
-\documentclass[a4paper,fontsize=11pt,bibliography=totoc]{scrartcl}
+\documentclass[a4paper,fontsize=10pt,bibliography=totoc]{scrartcl}
 
 %%%% Preamble %%%%
 % Packages inclusions
-\usepackage[top=1in,bottom=1.25in,left=1in,right=1in]{geometry}								% Custom margins (comment out if not needed)
+\usepackage[top=0.75in,bottom=1in,left=0.75in,right=0.75in]{geometry}								% Custom margins (comment out if not needed)
 \usepackage[english]{babel}				% Language settings
 \usepackage{lmodern}					% Use Latin Modern font
 \usepackage[nointegrals]{wasysym}
@@ -95,14 +95,13 @@
 
 \newcommand{\titlemake}[1]{%
 		\begin{center}
-			\begingroup
-				\large\sffamily\bfseries{#1}
-			\endgroup
+%			\begingroup
+				\Large\sffamily\bfseries{#1}
+%			\endgroup
 		\end{center}
 }
 
 \newcommand{\subtitlemake}[1]{%
-%	\parskip=0pt%
 	\begin{center}
 		\begingroup
 			\large\sffamily{#1}
@@ -132,7 +131,10 @@
 
 % Formatting for paragraphs (indentation and space after par.)
 \setlength{\parskip}{0.5\baselineskip}%
-\setlength{\parindent}{0pt}%
+\setlength{\parindent}{1em}%
+
+% Column separation
+\setlength{\columnsep}{2em}
 
 % Reduce space after sections
 \titlespacing{\section}{0pt}{\parskip}{-0.5\parskip}
@@ -157,13 +159,13 @@
 \rfoot{\footnotesize \thepage}
 
 \titlemake{ % \titlemake[1] is a custom command -- look in the preface!
-System dynamics approach for a holistic evaluation of transport policies \todo{targeted at air pollution reduction}
+System dynamics approach for a holistic evaluation of transport policies: extension of the CERO framework and policy assessment in Barcelona
 }
-\subtitlemake{Extension of the CERO framework and policy assessment in Barcelona}
+%\subtitlemake{Extension of the CERO framework and policy assessment in Barcelona}
 
-%\begin{multicols*}{2}
+\begin{multicols*}{2}
 	\input{proposal}
 	\printbibliography
-%\end{multicols*}
+\end{multicols*}
 
 \end{document}

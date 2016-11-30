@@ -1,6 +1,6 @@
 \section{Specific research question}
 \label{s:research-question}
-The \textbf{C}limate and \textbf{E}conomic \textbf{R}esearch in \textbf{O}rganisations framework (CERO) assesses the potential of greenhouse gas (GHG) emissions reduction that organisations policies can deliver~\parencite{robert2009cero}. A natural extension of the framework, already performed by \textcite{robert2006stockholm2030,robert2016cero-regional}, is to scale up the process to a regional level, and to evaluate the aggregate potential of several policies implemented simultaneously. However, the synergistic effects of multiple measures are difficult to estimate and, moreover, the CERO framework is heavily focused on \ce{CO_2} emissions reductions alone. Although \textcite{robert2006stockholm2030} also calculated social costs cuts derived from a more sustainable transportation system, such estimations are not systematically included in the CERO model.
+The CERO framework (Climate and Economic Research in Organisations) assesses the potential of greenhouse gas (GHG) emissions reduction that organisations policies can deliver~\parencite{robert2009cero}. A natural extension of the framework, already performed by \textcite{robert2006stockholm2030,robert2016cero-regional}, is to scale up the process to a regional level, and to evaluate the aggregate potential of several policies implemented simultaneously. However, the synergistic effects of multiple measures are difficult to estimate and, moreover, the CERO framework is heavily focused on \ce{CO_2} emissions reductions alone. Although \textcite{robert2006stockholm2030} also calculated social costs cuts derived from a more sustainable transportation system, such estimations are not systematically included in the CERO model.
 
 Given the complexity involved when evaluating simultaneous courses of action to reduce GHG emissions and the lack of assessment of additional potential benefits, this thesis addresses the following research question:
 %
@@ -13,75 +13,51 @@ To address both identified gaps in the CERO framework (synergistic behaviour of 
 In order to achieve the aim, a series of objectives are laid out to incrementally build and validate the evaluation framework:
 %
 \begin{enumerate}[label=(\alph*)]
-	\item Perform a literature review on the most important concepts and variables affecting the transportation system in urban areas.
-	\item Design a conceptual \textit{causal loop diagram} (CLD) linking different components in the transport system.
-	\item Incrementally expand the system boundaries of the CLD by including other aspects that affect or are affected by the transport system (e.g. taxes, fuel subsidies, healthcare costs, etc.).
-	\item 
-	
-	\item Describe the current situation with regards to air pollution in the city: its main causes and consequences.
-	\item Analyse the potential for up-scaling the CERO framework to a regional level.
-	\item Evaluate the usefulness of individual behaviour modelling with respect to policy at the municipal and regional levels.
-	\item Perform a literature review on the most effective in-place regulations to tackle air pollution.
-	\item Perform a stakeholder analysis with regards to transport and related regulation in the chosen area.
-	\item Propose a strategy to implement the CERO (individual behaviour modelling and backcasting approach) framework in the context of Barcelona.
+	\item Identify the important variables affecting the transportation system in urban areas.
+	\item Design a conceptual evaluation model for the transportation system.
+	\item Expand the conceptual model to include other social and economic aspects.
+	\item Quantify the relations within the model to improve later policy assessments.
+	\item Integrate the model with the CERO framework.
+	\item Test the validity of the model with regards to policy assessment.
 \end{enumerate}
 
 \section{Relevance}
 \label{s:relevance}
+Airborne pollution is one of the main causes of respiratory diseases and associated increase in morbidity in densely populated areas~\parencite{who2013review,vimercati2011airpollutionmorbidity}. The link from air pollution to both severe health problems and high traffic volumes is well known and thoroughly researched~\parencite{who2006air}. However, an unsustainable transportation system not only causes health issues, but massive costs in terms of reduced productivity, freight delay, increased energy and fuel consumption or vehicle losses and damages, for example~\parencite{lizeng2012costcongestion}. To address all these issues, policy packages or simultaneous enforcing of different policies are needed, because of the complexity involved in effectively reducing transportation impacts~\parencite[ch. 3, p. 45]{garcia2014travel}.
 
-The most prominent origin of air pollution in the urban region of Barcelona is the transport system. The previously stated research question can be narrowed down by taking this fact into account. 
-
-The most prominent contribution is that these measures are derived from a participatory backcasting process. Public authorities involvement in the 2006 article
-
-the high levels of air pollutants in Barcelona and
-
-(especially in terms of \ce{NO_X} and \ce{O_3})
-
-\old{
-\begin{itemize}
-	\item Geographic and climate constraints.
-	\item Geopolitical and demographical drivers of pollution.
-	\item The diesel engine issue.
-	\item Pollution in Barcelona: the cost in lives and healthcare assistance.
-	\item Business incentive
-\end{itemize}
-}
+Policy assessment is, therefore, a key issue to develop, due to the difficulty of dealing with entire systems, their internal dynamics and the emergent systemic behaviour patterns, such as feedback loops, rebound effects and hidden causalities. In this regard, system dynamics can help capture such structures and cause-effect chains, thus playing a \textit{discoverer} role, while the use of participatory backcasting (as performed in the CERO framework) to design the policies that best fit the situation -- and then evaluated by the system dynamics framework -- is an example of the \textit{mediator} role that science plays in sustainability issues~\parencite{ozawa1996science}.
 
 \section{System borders and delimitations}
 \label{s:system-borders}
-\old{\begin{itemize}
-	\item Long-term planning.
-	\item Municipal and regional level regulation.
-	\item Transport and other related policies: work environment.
-\end{itemize}}
+The boundaries of the system under analysis in the thesis are set around the transportation system and the \textit{primary} effects and variables that affect it. As explained in the \nameref{s:methods} section (\ref{s:methods}) below, an expansion of the initial system boundaries is planned in the model development phase. The borders expansion is meant to capture more complex system behaviour patterns, thus providing more useful insights to policy makers using the evaluation framework.
 
 \section{Methods}
 \label{s:methods}
-\old{\begin{itemize}
-	\item Literature review; evaluation criteria.
-	\item Case study.
-\end{itemize}}
+Regarding the methodological approach of the thesis, the chosen tool for the modelling step (the main contribution of the study) is the \textit{causal loop diagram} (CLD). The models obtained using this technique are easy to understand by a majority of stakeholders, they quickly convey the interrelations of the main components of a (dynamic) system and, finally, they are useful to highlight the feedback structure of the modelled system~\parencite{ghosh2015dynamic}.
+
+A more detailed plan of the methodology is depicted in the following enumeration, which matches the objectives presented in \sref{s:aim-objectives}:
+%
+\begin{enumerate}[label=(\alph*)]
+	\item Perform a literature review to retrieve data on the transportation system components.
+	\item Design a \textit{conceptual} CLD, linking different components in the transport system.
+	\item Iteratively expand the system boundaries of the CLD by including other aspects that affect or are affected by the transport system, with the insights provided by the literature research.
+	\item Using data from the literature review and from the database collected in the CERO project, fit as many equations as possible for the links in the model. The quantification is done in two steps:
+	\begin{enumerate}[label=\roman*.]
+		\item Identify and define the quantifiable links between \textit{core components} of the system.
+		\item Quantify ``external'' links dealing with social issues, such as healthcare or accident costs, if enough data is available.
+	\end{enumerate}
+	\item Design and discuss with the relevant stakeholders a methodology to integrate the dynamic model in the policy assessment process of the CERO framework.
+	\item Perform a validation test of the evaluation model in a case study in Barcelona (e.g. in the context of the GrowSmarter\footnote{The GrowSmarter project is a joint effort from companies, public authorities and researchers to implement pilot measures to achieve a more sustainable life in the cities of Stockholm, Cologne and Barcelona. Some of the measures address sustainable transportation with the goal to reduce \ce{CO_2} emissions by 60\%. More information can be found at: \url{http://www.grow-smarter.eu/home}} project).
+\end{enumerate}
 
 \section{Evidence}
 \label{s:evidence}
-\old{\begin{itemize}
-	\item There are potential advances in the CERO framework towards the up-scaling of the concept to broader systems and higher socio-political levels.
-	\item Barcelona lacks proper transport regulation and resource administration: central state vs. regional vs. municipal.
-	\item Economy is heavily based on service provision: potential for CERO framework.
-\end{itemize}}
+The data used to perform the design of the evaluation framework will be based, primarily, on a literature review. A preliminary selection of this evidence is found in cost estimation studies performed by, e.g., \textcite{lizeng2012costcongestion,robert2006stockholm2030,trafikverket2016asek,mizutani2011estimatingcosts}. In addition, datasets developed within the CERO project along many years might be used, both to extract new links and concepts to add to the conceptual model and to quantify some of those relations.
 
 \section{Personal justification}
 \label{s:personal-justification}
-\old{\begin{itemize}
-	\item Natural born of Barcelona.
-	\item Done a course on individual choice modelling.
-	\item Interested in transport regulation.
-	\item Data collection and statistical evaluation, if needed, are skills gained in the computer science bachelor.
-\end{itemize}}
+
+
 
 \section{Generalisation and transferability}
 \label{s:generalisation}
-\old{\begin{itemize}
-	\item Low generalisation, but possible insights on common regulation for other cities.
-	\item The framework of the project should be transferable (backcasting and behaviour modelling).
-\end{itemize}}
