@@ -125,7 +125,9 @@
 % Koma Script font modifications
 \setkomafont{author}{\small}
 \setkomafont{date}{\scshape}
-\addtokomafont{section}{\normalsize}
+\addtokomafont{section}{\large}
+\addtokomafont{subsection}{\normalsize}
+\addtokomafont{subsubsection}{\small}
 \setlist{nosep}
 \renewcommand*{\bibfont}{\footnotesize}
 
@@ -154,18 +156,65 @@
 \fancyhf{} % clear header and footer
 \rhead{\footnotesize \today}
 \lhead{\footnotesize David Martínez Rodríguez}
-\chead{\footnotesize MSc Thesis Proposal}
-\lfoot{\footnotesize MJ2673 - RMTS}
+\chead{\footnotesize MSc Thesis Synopsis}
 \rfoot{\footnotesize \thepage}
 
 \titlemake{ % \titlemake[1] is a custom command -- look in the preface!
-System dynamics approach for a holistic evaluation of transport policies: extension of the CERO framework and policy assessment in Barcelona
+MSc Thesis Synopsis
 }
 %\subtitlemake{Extension of the CERO framework and policy assessment in Barcelona}
 
 \begin{multicols*}{2}
-	\input{proposal}
-	\printbibliography
+
+\section{Background}
+The following Master Thesis proposal, detailed in \sref{s:synopsis}, draws on concepts, theories and methods from several different disciplines, which are introduced in this Section. A short motivation is also outlined, concerning the choice of the study topic.
+
+\subsection{The Transport System}
+\todo[inline]{Intro to the transport system}
+\subsubsection{Impacts and policy assessment}
+Airborne pollution is one of the main causes of respiratory diseases and associated increase in morbidity in densely populated areas~\parencite{vimercati2011airpollutionmorbidity,who2006air}. The link from air pollution to both severe health problems and high traffic volumes is well known and thoroughly researched~\parencite{who2006air}. However, an unsustainable transportation system not only causes health issues, but massive costs in terms of reduced productivity, freight delay, increased energy and fuel consumption or vehicle losses and damages, for example~\parencite{lizeng2012costcongestion}. To address all these issues, policy packages or simultaneous enforcing of different policies are needed, because of the complexity involved in effectively reducing transportation impacts~\parencite[ch. 3, p. 45]{garcia2014travel}.
+
+Policy assessment is, therefore, a key issue to develop, due to the difficulty of dealing with entire systems, their internal dynamics and the emergent systemic behaviour patterns, such as feedback loops, rebound effects and hidden causalities. In this regard, system dynamics can help capture such structures and cause-effect chains, thus playing a \textit{discoverer} role, while the use of participatory backcasting (as performed in the CERO framework) to design the policies that best fit the situation -- and then evaluated by the system dynamics framework -- is an example of the \textit{mediator} role that science plays in sustainability issues~\parencite{ozawa1996science}.
+
+\subsubsection{The predominant regime}
+\subsubsection{A lack of systems perspective}
+\subsubsection{A lack of change perspective}
+\subsection{System Dynamics}
+\subsection{Transition Management}
+
+\section{Synopsis}
+\label{s:synopsis}
+\subsection{Thesis title}
+\subsection{Research question}
+\subsection{Aim}
+\subsection{Objectives}
+\subsection{Methods}
+
+\section{Thesis schedule}
+The thesis preliminary schedule is shown in \tref{t:schedule}. The plan contemplates several phases, that will be broken down into the appropriate tasks within the \textit{Planning Report}, once a more clear roadmap is designed. \todo[inline]{Explain briefly the phases.} \todo[inline]{Add Planning Report milestone.}
+
+\printbibliography
+
 \end{multicols*}
+
+\todo[inline]{Add table footnote explaining it's \textit{work} time, without weekends}
+\begin{table}[h!]
+\centering
+\footnotesize
+\caption{Thesis preliminary plan. Phases shown will be broken down into tasks in the planning report.}
+\label{t:schedule}
+\begin{tabular}{llll}
+\toprule
+Task                         & Start date & End date & Duration (work) \\ \midrule
+PH0 Thesis definition        & Jan 16     & Jan 20   & 5d              \\
+PH1 Literature review        & Jan 23     & Feb 3    & 10d             \\
+PH2 Model development        & Feb 6      & Mar 31   & 40d             \\
+PH3 Model benchmark          & Apr 3      & Apr 28   & 20d             \\
+PH4 Report writing           & May 1      & May 26   & 20d             \\
+Thesis report                & May 26     & May 26   & Milestone       \\
+PH5 Presentation preparation & May 29     & Jun 6    & 7d              \\
+Final presentation           & Jun 6      & Jun 6    & Milestone       \\ \bottomrule
+\end{tabular}
+\end{table}
 
 \end{document}
