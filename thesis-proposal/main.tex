@@ -23,6 +23,7 @@
 \usepackage[toc,page]{appendix}			% Appendices title customisation
 \usepackage{enumitem}					% Customized enumerations and itemizes
 \usepackage[version=3]{mhchem}			% Allows inclusion of chemical formulas and eq.
+\usepackage{amssymb}
 \usepackage[ruled,vlined]{algorithm2e} % Algorithms and pseudocode
 \usepackage{todonotes}					% Useful to put TODO side notes
 \usepackage[noblocks]{authblk}			% Allows authors with affiliations
@@ -128,6 +129,8 @@
 \addtokomafont{section}{\large}
 \addtokomafont{subsection}{\normalsize}
 \addtokomafont{subsubsection}{\small}
+\addtokomafont{caption}{\small}
+\setlength{\abovecaptionskip}{2pt plus 0pt minus 2pt}
 \setlist{nosep}
 \renewcommand*{\bibfont}{\footnotesize}
 
@@ -136,12 +139,12 @@
 \setlength{\parindent}{1em}%
 
 % Column separation
-\setlength{\columnsep}{2em}
+\setlength{\columnsep}{1.5em}
 
 % Reduce space after sections
 \titlespacing{\section}{0pt}{\parskip}{-0.5\parskip}
-\titlespacing{\subsection}{0pt}{\parskip}{-0.5\parskip}
-\titlespacing{\subsubsection}{0pt}{\parskip}{-0.5\parskip}
+\titlespacing{\subsection}{0pt}{-0.25\parskip}{-0.6\parskip}
+\titlespacing{\subsubsection}{0pt}{-0.5\parskip}{-0.75\parskip}
 
 % Configuration of the blockquotes paragraphs
 \SetBlockThreshold{0} % all blockquotes of 1 or more lines are treated as blocks
@@ -164,57 +167,96 @@ MSc Thesis Synopsis
 }
 %\subtitlemake{Extension of the CERO framework and policy assessment in Barcelona}
 
-\begin{multicols*}{2}
+\begin{multicols}{2}
 
 \section{Background}
-The following Master Thesis proposal, detailed in \sref{s:synopsis}, draws on concepts, theories and methods from several different disciplines, which are introduced in this Section. A short motivation is also outlined, concerning the choice of the study topic.
-
+\label{s:background}
+%The following Master Thesis proposal, detailed in \sref{s:synopsis}, draws on concepts, theories and methods from several different disciplines, which are introduced in this Section. A short motivation is also outlined, concerning the choice of the study topic.
 \subsection{The Transport System}
 \todo[inline]{Intro to the transport system}
-\subsubsection{Impacts and policy assessment}
+\subsubsection*{Impacts and policy assessment}
 Airborne pollution is one of the main causes of respiratory diseases and associated increase in morbidity in densely populated areas~\parencite{vimercati2011airpollutionmorbidity,who2006air}. The link from air pollution to both severe health problems and high traffic volumes is well known and thoroughly researched~\parencite{who2006air}. However, an unsustainable transportation system not only causes health issues, but massive costs in terms of reduced productivity, freight delay, increased energy and fuel consumption or vehicle losses and damages, for example~\parencite{lizeng2012costcongestion}. To address all these issues, policy packages or simultaneous enforcing of different policies are needed, because of the complexity involved in effectively reducing transportation impacts~\parencite[ch. 3, p. 45]{garcia2014travel}.
 
 Policy assessment is, therefore, a key issue to develop, due to the difficulty of dealing with entire systems, their internal dynamics and the emergent systemic behaviour patterns, such as feedback loops, rebound effects and hidden causalities. In this regard, system dynamics can help capture such structures and cause-effect chains, thus playing a \textit{discoverer} role, while the use of participatory backcasting (as performed in the CERO framework) to design the policies that best fit the situation -- and then evaluated by the system dynamics framework -- is an example of the \textit{mediator} role that science plays in sustainability issues~\parencite{ozawa1996science}.
 
-\subsubsection{The predominant regime}
-\subsubsection{A lack of systems perspective}
-\subsubsection{A lack of change perspective}
+\subsubsection*{The predominant regime}
+\subsubsection*{A lack of systems perspective}
+\subsubsection*{A lack of change perspective}
 \subsection{System Dynamics}
 \subsection{Transition Management}
 
 \section{Synopsis}
 \label{s:synopsis}
-\subsection{Thesis title}
-\subsection{Research question}
-\subsection{Aim}
-\subsection{Objectives}
-\subsection{Methods}
+\subsection*{Thesis title}
+The proposed title for the thesis is: \textit{``Comparing eco-efficiency and transition management policies in the transport sector. A system dynamics approach.''}
+
+\subsection*{Research question}
+The research question that the thesis addresses is: \textit{``Can transition management oriented policies trigger better responses than eco-efficiency and behavioural oriented ones, when aiming for a more sustainable transport system?''}
+
+\subsection*{Aim}
+In order to answer the previous research question, an aim is set for the thesis: \textit{``To explore a method for system-wide evaluation of transition management policies targeting a more sustainable transport system''}.
+
+\subsection*{Objectives}
+The set of objectives designed to fulfil the aim of the thesis are:
+\begin{enumerate}[label=(\alph*)]
+	\item \textit{Identify} the important variables and system structures affecting transportation in urban areas, as well as the drivers and locking mechanisms of a potential transition towards a more sustainable transport system.
+	\item \textit{Design} a conceptual model for the transportation system, including the previously identified social, environmental, economic and structural aspects.
+	\item \textit{Quantify} the relations of the conceptual model to enable in-depth policy analysis.
+	\item \textit{Validate} the model with regards to policy assessment and provide an example on how to use the model.
+\end{enumerate}
+
+\subsection*{Methods}
+The chosen tool for the conceptual modelling step is the \textit{causal loop diagram} (CLD), followed by \textit{system dynamics} modelling in the quantification step. The models obtained using this technique are easy to understand by a majority of stakeholders, they quickly convey the interrelations of the main components of a (dynamic) system and, finally, they are useful to highlight the feedback structure of the modelled system~\parencite{ghosh2015dynamic}. A more detailed plan of the methodology is depicted in the following enumeration:
+%
+\begin{enumerate}[label=(\alph*)]
+	\item Perform a \textit{literature review} to retrieve the necessary data and knowledge about the diverse transportation system components.
+	\item Design a \textit{conceptual CLD}, linking different components in the transport system. To achieve a highly comprehensive model, iteratively expand the system boundaries of the CLD by including other aspects that affect or are affected by the transport system, with the insights provided by the literature research.
+	\item Using the collected data from the literature review, fit as many \textit{equations} as possible for the links in the model. The quantification is done in three steps:
+	\begin{enumerate}[label=\roman*.]
+		\item Identify and define the quantifiable links between \textit{core components} of the system.
+		\item Quantify ``external'' links dealing with social issues, such as healthcare or accident costs, if enough data is available.
+		\item Quantify the links from the core components of the system to the transition management assessment level.
+	\end{enumerate}
+	\item Validate the evaluation model through a \textit{case study} in either Barcelona or Stockholm\footnote{The choice of the city will depend on data availability and potential language barriers.}, assessing the city's mobility plan \todo{cite mobility plans}.
+\end{enumerate}
 
 \section{Thesis schedule}
-The thesis preliminary schedule is shown in \tref{t:schedule}. The plan contemplates several phases, that will be broken down into the appropriate tasks within the \textit{Planning Report}, once a more clear roadmap is designed. \todo[inline]{Explain briefly the phases.} \todo[inline]{Add Planning Report milestone.}
+\label{s:schedule}
+The thesis preliminary schedule is shown in \tref{t:schedule}. The plan contemplates several phases, that will be broken down into the appropriate tasks within the \textit{Planning Report}, once a more clear roadmap is designed. A Gantt chart depicting the same schedule is shown in \fref{f:gantt-chart}. The phases of the thesis are designed to fit the main objectives of the study, as shown in \tref{t:schedule}.
 
 \printbibliography
+\end{multicols}
 
-\end{multicols*}
-
-\todo[inline]{Add table footnote explaining it's \textit{work} time, without weekends}
 \begin{table}[h!]
 \centering
 \footnotesize
 \caption{Thesis preliminary plan. Phases shown will be broken down into tasks in the planning report.}
 \label{t:schedule}
-\begin{tabular}{llll}
+\begin{tabular}{lllll}
 \toprule
-Task                         & Start date & End date & Duration (work) \\ \midrule
-PH0 Thesis definition        & Jan 16     & Jan 20   & 5d              \\
-PH1 Literature review        & Jan 23     & Feb 3    & 10d             \\
-PH2 Model development        & Feb 6      & Mar 31   & 40d             \\
-PH3 Model benchmark          & Apr 3      & Apr 28   & 20d             \\
-PH4 Report writing           & May 1      & May 26   & 20d             \\
-Thesis report                & May 26     & May 26   & Milestone       \\
-PH5 Presentation preparation & May 29     & Jun 6    & 7d              \\
-Final presentation           & Jun 6      & Jun 6    & Milestone       \\ \bottomrule
+Task & Objective & Start date & End date & Duration (work)\textsuperscript{1} \\
+\midrule
+PH0 Thesis definition & -- & Jan 16 & Jan 20 & 5 d \\
+PH1A Literature review & (a) & Jan 23 & Feb 3 & 10 d \\
+PH1B Planning report writing & -- & Jan 30 & Feb 3 & 5 d \\
+Planning report & -- & Feb 3 & Feb 3 & Milestone \\
+PH2 Model development & (b), (c) & Feb 6 & Mar 31 & 40d \\
+PH3 Model benchmark & (d) & Apr 3 & Apr 28 & 20 d \\
+PH4 Report writing & -- & May 1 & May 26 & 20 d \\
+Thesis report & -- & May 26 & May 26 & Milestone \\
+PH5 Presentation preparation & -- & May 29 & Jun 6 & 7 d \\
+Final presentation & -- & Jun 6 & Jun 6 & Milestone \\
+\bottomrule
 \end{tabular}
+{\\ \scriptsize \parbox{0.7\linewidth}{\textsuperscript{1} Only \textit{work} days are included in the duration specification -- weekends are excluded from the calculation. Therefore, 20 days correspond to 4 full weeks (a month) worth of work.}}
 \end{table}
+
+\begin{figure}[h!]
+\centering
+\footnotesize
+{\setlength{\fboxsep}{0pt}\fbox{\includegraphics[width=\linewidth,clip,trim=0.64cm 23.9cm 0.7cm 0.7cm]{figures/thesis-gantt.pdf}}}
+\caption{Thesis preliminary plan, as a Gantt chart. Milestones are marked with a $\blacklozenge$ symbol.}
+\label{f:gantt-chart}
+\end{figure}
 
 \end{document}
