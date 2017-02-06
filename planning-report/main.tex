@@ -170,7 +170,7 @@
 \chead{\footnotesize MSc Thesis - Planning Report}
 \rfoot{\footnotesize \thepage}
 
-\titlemake{0.95}{ % \titlemake[2] is a custom command -- look in the preface!
+\titlemake{1}{ % \titlemake[2] is a custom command -- look in the preface!
 Assessing impacts reduction and transition-oriented planning in sustainable mobility policies: a System Dynamics approach
 }
 
@@ -193,7 +193,7 @@ In order to answer the stated research question, this thesis aims to \textit{exp
 
 The set of objectives designed to fulfil the aim of the thesis are:
 \begin{enumerate}[label=(\alph*)]
-	\item \textit{Identify} the important variables, impacts and system structures affecting mobility in urban areas, as well as the drivers and locking mechanisms of a potential transition towards a more sustainable transport system.
+	\item \textit{Identify} the important variables, impacts and system structures affecting mobility in urban areas, as well as the drivers and lock-in mechanisms of a potential transition towards a more sustainable transport system.
 	\item \textit{Design} a conceptual model for the mobility system, including the previously identified social, environmental, economic and structural aspects.
 	\item \textit{Quantify} the relations of the conceptual model to enable a more in-depth policy analysis, with respect to impact assessment.
 	\item \textit{Validate} the model by performing tests to increase the confidence level of the model, as suggested by \textcite{forrester1978_TestsBuildingConfidence,qudrat-ullah2010_Howdostructural}.
@@ -217,7 +217,7 @@ The chosen tool for the conceptual modelling step is the \textit{causal loop dia
 \end{enumerate}
 
 \section{Disposition}
-The preliminary document structure for the thesis report is based on a traditional research outline, due to the investigative nature of the thesis. The proposed disposition is:
+The preliminary document structure for the thesis report is based on a traditional research outline, due to the investigative nature of the thesis:
 
 \begin{dispositionlist}
 	\item Introduction
@@ -306,8 +306,8 @@ Task & Objective & Start date & Finish date & Duration (work)\textsuperscript{$\
 \section{Risk analysis}
 % You should do a simple risk analysis of your project, as follows: "Brainstorm" all possible risks. Assess how likely it is that they will occur (rank them on a scale of 1, 3, 9, where 1 is a bit unlikely and 9 are very likely). Consider then how serious the consequences are for each risk (on a scale of 1, 3, 9). Make an action plan for those risks with the highest likelihood and/or consequence
 Several risks have been identified with respect to the proposed thesis, considering the chosen methodology and objectives. The list of risks is presented in \tref{t:risks}, where a subjective likelihood level indicator (with possible values: 1, 3, 9) is included, as well as a summary of the consequences of incurring in every detailed risk. Alternative action plans are also included in the table, which would be put in place if the thesis project was deviating from its normal course due to any of the identified risks.
-
-\begin{table}
+%
+\begin{table}[h!]
 \centering
 \footnotesize
 \caption{Risk analysis of the thesis. Alternative action plans are detailed for each identified risk.}
@@ -318,13 +318,14 @@ Risk & Likelihood & Consequences & Action plan \\
 \midrule
 Too ambitious scope & 9 & The thesis is not complete, regarding the list of objectives. & A thorough model quantification is skipped. The thesis focuses on qualitative discussion of the system's causal structure instead. \\[0.5em]
 Unavailable data & 3 & The model is incomplete, at a conceptual or quantitative level. & The limitations of the model are deeply discussed. The focus is put on model validation and example use. \\[0.5em]
-System Dynamics quantification is the wrong choice & 3 & The use of System Dynamics to quantify the model does not capture the flexibility in the model structure needed to evaluate transition management policies. Alternatively, the concept of flows and stocks does not adhere to the purpose of the model. & Another modelling technique, such as agent-based modelling is chosen and implemented. \\[0.5em]
+System Dynamics quantification is the wrong choice & 3 & The use of System Dynamics to quantify the model does not capture the flexibility in the model structure needed to evaluate transition management policies. & Another modelling technique, such as agent-based modelling is chosen and implemented. If there is no time to do so, the quantification step is skipped and details of the decision are provided in the final report. \\[0.5em]
 The results are too normative & 1 & The thesis is regarded as too normative and the results are not accepted as valid, due to the normative bias. & The discussion section is lengthened to argue for the normative focus of the thesis. Results are put in context to avoid being too biased. \\[0.5em]
 The results are inconclusive & 1 & The model does not capture the reality of the system and the aim is not fulfilled. & Useful results are highlighted and an explanation and analysis is given about the reasons why the modelling phase was unsuccessful. \\
 \bottomrule
 \end{tabular}
 \end{table}
 
+\clearpage
 \printbibliography
 
 \end{document}
