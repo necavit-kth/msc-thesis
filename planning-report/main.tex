@@ -6,7 +6,7 @@
 
 %%%% Preamble %%%%
 % Packages inclusions
-%\usepackage[top=0.75in,bottom=0.8in,left=0.75in,right=0.75in]{geometry}								% Custom margins (comment out if not needed)
+\usepackage[top=1in,bottom=1in]{geometry}								% Custom margins (comment out if not needed)
 \usepackage[english]{babel}				% Language settings
 \usepackage{lmodern}					% Use Latin Modern font
 \usepackage[nointegrals]{wasysym}
@@ -170,8 +170,8 @@
 \chead{\footnotesize MSc Thesis - Planning Report}
 \rfoot{\footnotesize \thepage}
 
-\titlemake{0.9}{ % \titlemake[2] is a custom command -- look in the preface!
-Assessing transition-oriented planning in sustainable mobility policies: a System Dynamics approach
+\titlemake{0.95}{ % \titlemake[2] is a custom command -- look in the preface!
+Assessing impacts reduction and transition-oriented planning in sustainable mobility policies: a System Dynamics approach
 }
 
 \section{Background and problem description}
@@ -186,13 +186,10 @@ On the other hand, policy development in the field of transportation has been ma
 However, a third way is possible, when it comes to policy design for sustainable mobility: transition management oriented policy. Its approach entails adopting a longer term thinking mindset (usually one or several generations), multi-level and multi-domain thinking, maintaining support for a large set of solutions and with a focus in system \textit{innovation} alongside system improvements \parencite{rotmans2001_Moreevolutionthan}. Moreover, flexibility in the objectives of policies is encouraged, as well as a more qualitative perspective to policy goals. All these characteristics configure a policy design mindset that could be the key to unlock a true game change in urban mobility, by drifting the focus from efficiency measures to a transition and innovation vision, where something more than technological progress is harnessed to achieve a sustainable transport system in the future.
 
 \section{Purpose and definitions}
-\colorbox{red}{!!!!TODO!!!!}
 % Summarize and clarify the problem description. This will usually be done in discussion with your industrial supervisor. However, it is your responsibility to ensure that the purpose of the project is clear and well formulated. In some cases, the employer’s formulation of the mission can be shown separately. Consider carefully how much you think you have time for and which tasks take priority.
-As much as holistic evaluation frameworks are needed to assess the reduction or increase in impacts resulting from the mobility system, policy makers should also focus on the transition management perspective of said policies. In order to understand the status of the system with regards to a sustainable transition, an assessment of the current and future policies is needed.
+As much as a holistic evaluation framework is needed to assess the impacts reduction or increase resulting from policies in the mobility system, policy makers should also focus on the transition management perspective of said policies. In order to understand the status of a transition towards a sustainable mobility system, an analysis of the current and future policies is needed. Taking all of this into account, the research question that the thesis addresses is: \textit{``How can mobility policies be designed to achieve effective impact reductions and, at the same time, support a transition to a more sustainable urban mobility system?''}
 
-The research question that the thesis addresses is: \textit{``Can transition oriented policies trigger better system responses than traditional policy design (system efficiency and behavioural measures), when aiming for a more sustainable urban mobility system?''}
-
-In order to answer the previous research question, an aim is set for the thesis: \textit{``To explore a method for system-wide evaluation of urban mobility policies, with regards to environmental, social and economic impacts, used in the assessment of transition oriented and traditional mobility policies''}.
+In order to answer the stated research question, this thesis aims to \textit{explore a method for system-wide evaluation of urban mobility policies, with regards to environmental, social and economic impacts and the status of a sustainable transition, used in the assessment of mobility policies}. Developing and applying such an evaluation framework helps the analysis of the current set of policies to understand to which extent the mobility system is transitioning to a more sustainable state.
 
 The set of objectives designed to fulfil the aim of the thesis are:
 \begin{enumerate}[label=(\alph*)]
@@ -204,9 +201,8 @@ The set of objectives designed to fulfil the aim of the thesis are:
 \end{enumerate}
 
 \section{Method description}
-\colorbox{red}{!!!!TODO!!!!}
 % Discuss the options available and the choice of methodology you intend to follow. Illustrate how the method you have chosen best allows you to fulfill the purpose of the project.
-The chosen tool for the conceptual modelling step is the \textit{causal loop diagram} (CLD), probably followed by \textit{system dynamics} modelling in the quantification step, although this is still not clear\footnote{The final decision between implementing the quantification step through \textit{system dynamics} or \textit{agent-based modelling} will be based on literature research and a thorough justification of the strengths and weaknesses of each method.}. The models obtained using this technique are easy to understand by a majority of stakeholders, they quickly convey the interrelations of the main components of a (dynamic) system and, finally, they are useful to highlight the feedback structure of the modelled system~\parencite{ghosh2015_DynamicSystemsEveryone}. A more detailed plan of the methodology is depicted in the following enumeration:
+The chosen tool for the conceptual modelling step is the \textit{causal loop diagram} (CLD), probably followed by \textit{system dynamics} modelling in the quantification step, although this is still not clear\footnote{The final decision between implementing the quantification step through \textit{system dynamics} or \textit{agent-based modelling} will be based on literature research and a thorough justification of the strengths and weaknesses of each method.}. The models obtained using this technique are easy to understand by a majority of stakeholders, they quickly convey the interrelations of the main components of a (dynamic) system and, finally, they are useful to highlight the feedback structure of the modelled system~\parencite{ghosh2015_DynamicSystemsEveryone}. A more detailed plan of the methodology consists in:
 %
 \begin{enumerate}[label=(\alph*)]
 	\item Design a \textit{conceptual CLD}, linking different components in the transport system. To achieve a highly comprehensive model, iteratively expand the system boundaries of the CLD by including other aspects that affect or are affected by the transport system, with the insights provided by the literature research. The necessary data and knowledge about the diverse transportation system components will be collected on the basis of a \textit{literature review}.
@@ -251,7 +247,7 @@ The preliminary document structure for the thesis report is based on a tradition
 \end{dispositionlist}
 
 \section{Detailed schedule}
-A detailed version of the proposed thesis schedule can be seen in \fref{f:gantt} and \tref{t:schedule}. The phases that were outlined in the Thesis Synopsis document have been broken down into more specific tasks, which amount the same number of work days as the preliminary suggestion. The most important changes are:
+A detailed version of the proposed thesis schedule can be seen in \autoref{f:gantt} and \autoref{t:schedule}. The phases that were outlined in the Thesis Synopsis document have been broken down into more specific tasks, which amount the same number of work days as the preliminary suggestion. The most important changes are:
 %
 \begin{itemize}
 \item The model development phase (PH2) is now split up between a conceptual modelling task and a quantitative modelling one. Iterations in the conceptual mapping step will be used to develop the environmental, social and economic modules of the CLD model. The quantitative modelling phase is also split between the identification of stock and flow variables and the quantification of the dynamics of such.
@@ -261,25 +257,41 @@ A detailed version of the proposed thesis schedule can be seen in \fref{f:gantt}
 \begin{table}[h!]
 \centering
 \footnotesize
-\caption{Thesis scheduled \textit{phases}. Note that subtasks are not shown, but can be seen at the Gantt chart presented in \fref{f:gantt}.}
+\caption{Thesis detailed schedule. The same information is presented in a Gantt chart in \autoref{f:gantt}.}
 \label{t:schedule}
 \begin{tabular}{lllll}
 \toprule
-Task & Objective & Start date & End date & Duration (work)\textsuperscript{1} \\
+Task & Objective & Start date & Finish date & Duration (work)\textsuperscript{$\ast$} \\
 \midrule
-PH0 Thesis definition & -- & Jan 16 & Jan 20 & 5 d \\
-PH1A Literature review & (a) & Jan 23 & Feb 3 & 10 d \\
-PH1B Planning report writing & -- & Jan 30 & Feb 3 & 5 d \\
-Planning report & -- & Feb 3 & Feb 3 & Milestone \\
-PH2 Model development & (b), (c) & Feb 6 & Mar 31 & 40d \\
-PH3 Model benchmark & (d) & Apr 3 & Apr 28 & 20 d \\
-PH4 Report writing & -- & May 1 & May 26 & 20 d \\
-Thesis report & -- & May 26 & May 26 & Milestone \\
-PH5 Presentation preparation & -- & May 29 & Jun 6 & 7 d \\
-Final presentation & -- & Jun 6 & Jun 6 & Milestone \\
+\textsc{PH0 Topic definition} & -- & Jan 16 & Jan 20 & 5d \\[0.5em]
+\textsc{PH1A Background literature review} & (a) & Jan 23 & Feb 3 & 10d \\
+\textsc{PH1B Planning report writing} & -- & Jan 30 & Feb 3 & 5d \\
+\textit{Planning report} & -- & -- & Feb 3 & \textbf{Milestone} \\[0.5em]
+\textsc{PH2 Model development} & (b), (c) & Feb 6 & Mar 31 & 40d \\
+\hspace{1em}Conceptual modelling & (b) & Feb 6 & Mar 3 & 20d \\
+\hspace{2em}System boundaries definition & -- & Feb 6 & Feb 6 & 1d \\
+\hspace{2em}Identification of indicators & -- & Feb 7 & Feb 10 & 4d \\
+\hspace{2em}I1 Iteration 1 - Environmental & -- & Feb 13 & Feb 17 & 5d \\
+\hspace{2em}I2 Iteration 2 - Economic & -- & Feb 20 & Feb 24 & 5d \\
+\hspace{2em}I3 Iteration 3 - Social & -- & Feb 27 & Mar 3 & 5d \\
+\hspace{1em}Quantitative modelling & (c) & Mar 6 & Mar 31 & 20d \\
+\hspace{2em}Flows and stocks identification & -- & Mar 6 & Mar 10 & 5d \\
+\hspace{2em}Flows and stocks quantification & -- & Mar 13 & Mar 31 & 15d \\[0.5em]
+\textsc{PH3 Model benchmark} & (d), (e) & Apr 3 & Apr 28 & 20d \\
+\hspace{1em}Model validation \& calibration & (d) & Apr 3 & Apr 14 & 10d \\
+\hspace{1em}Case application & (e) & Apr 17 & Apr 28 & 10d \\[0.5em]
+\textsc{PH4 Report writing} & -- & May 1 & May 26 & 20d \\
+\hspace{1em}Introduction & -- & May 1 & May 5 & 5d \\
+\hspace{1em}Methods & -- & May 8 & May 10 & 3d \\
+\hspace{1em}Results \& analysis & -- & May 11 & May 17 & 5d \\
+\hspace{1em}Discussion & -- & May 18 & May 24 & 5d \\
+\hspace{1em}Conclusion \& abstract & -- & May 25 & May 26 & 2d \\
+\textit{Thesis report} & -- & -- & May 26 & \textbf{Milestone} \\[0.5em]
+\textsc{PH5 Presentation preparation} & -- & May 29 & Jun 6 & 7d \\
+\textit{Final presentation} & -- & -- & Jun 6 & \textbf{Milestone} \\
 \bottomrule
 \end{tabular}
-{\\ \scriptsize \parbox{0.7\linewidth}{\textsuperscript{1} Only \textit{work} days are included in the duration specification -- weekends are excluded from the calculation. Therefore, 20 days correspond to 4 full weeks (a month) worth of work.}}
+{\\[0.5em] \footnotesize \parbox{0.95\linewidth}{\textsuperscript{$\ast$} Only \textit{work} days are included in the duration specification -- weekends are excluded from the calculation. Therefore, 20 days correspond to 4 full weeks (a month) worth of work.}}
 \end{table}
 
 \begin{landscape}
@@ -293,16 +305,24 @@ Final presentation & -- & Jun 6 & Jun 6 & Milestone \\
 
 \section{Risk analysis}
 % You should do a simple risk analysis of your project, as follows: "Brainstorm" all possible risks. Assess how likely it is that they will occur (rank them on a scale of 1, 3, 9, where 1 is a bit unlikely and 9 are very likely). Consider then how serious the consequences are for each risk (on a scale of 1, 3, 9). Make an action plan for those risks with the highest likelihood and/or consequence
-\colorbox{red}{!!!!TODO!!!!}
 Several risks have been identified with respect to the proposed thesis, considering the chosen methodology and objectives. The list of risks is presented in \tref{t:risks}, where a subjective likelihood level indicator (with possible values: 1, 3, 9) is included, as well as a summary of the consequences of incurring in every detailed risk. Alternative action plans are also included in the table, which would be put in place if the thesis project was deviating from its normal course due to any of the identified risks.
 
 \begin{table}
-	\begin{tabular}{l}
-	\toprule
-	Lorem ipsum\\
-	\bottomrule
-	\end{tabular}
+\centering
+\footnotesize
+\caption{Risk analysis of the thesis. Alternative action plans are detailed for each identified risk.}
 \label{t:risks}
+\begin{tabular}{p{2.5cm}p{1.5cm}p{4.5cm}p{4.5cm}}
+\toprule
+Risk & Likelihood & Consequences & Action plan \\
+\midrule
+Too ambitious scope & 9 & The thesis is not complete, regarding the list of objectives. & A thorough model quantification is skipped. The thesis focuses on qualitative discussion of the system's causal structure instead. \\[0.5em]
+Unavailable data & 3 & The model is incomplete, at a conceptual or quantitative level. & The limitations of the model are deeply discussed. The focus is put on model validation and example use. \\[0.5em]
+System Dynamics quantification is the wrong choice & 3 & The use of System Dynamics to quantify the model does not capture the flexibility in the model structure needed to evaluate transition management policies. Alternatively, the concept of flows and stocks does not adhere to the purpose of the model. & Another modelling technique, such as agent-based modelling is chosen and implemented. \\[0.5em]
+The results are too normative & 1 & The thesis is regarded as too normative and the results are not accepted as valid, due to the normative bias. & The discussion section is lengthened to argue for the normative focus of the thesis. Results are put in context to avoid being too biased. \\[0.5em]
+The results are inconclusive & 1 & The model does not capture the reality of the system and the aim is not fulfilled. & Useful results are highlighted and an explanation and analysis is given about the reasons why the modelling phase was unsuccessful. \\
+\bottomrule
+\end{tabular}
 \end{table}
 
 \printbibliography
