@@ -1,0 +1,214 @@
+% **************************************************************** %
+%                          Document Class
+% **************************************************************** %
+% Class of the document: KOMA Script Report
+%   Options: 12 points font, A4 paper, bibliography in ToC
+\documentclass[a4paper,11pt,bibliography=totoc]{scrreprt}
+
+% **************************************************************** %
+%                            Packages
+% **************************************************************** %
+%\usepackage[top=1in,bottom=1.25in,left=1.25in,right=1.25in]{geometry}								% Custom margins (comment out if not needed)
+\usepackage[english]{babel}	% Language settings
+\usepackage{lmodern} % Use Latin Modern font
+\usepackage[nointegrals]{wasysym}
+\usepackage{microtype} % Enhanced typesetting (better reading)
+\usepackage{graphicx}	% Enhanced graphics processing
+\usepackage{url}
+\usepackage{breakurl}
+\usepackage[table,hyperref,x11names,svgnames]{xcolor}	% Allows coloring tables
+\usepackage[section]{placeins} % Ensure float elems. inside their section
+\usepackage{booktabs}	% Beautiful, professional tables
+\usepackage{adjustbox} % Boxing capabilities for images and text
+\usepackage{multirow}	% Enables tabular cells spanning multiple rows
+\usepackage{array} % Enables custom table column defintions
+\usepackage[toc,page]{appendix}	% Appendices title customisation
+\usepackage{enumitem}	% Customized enumerations and itemizes
+\usepackage[version=3]{mhchem} % Allows inclusion of chemical formulas and eq.
+\usepackage{siunitx} % SI units standard
+\usepackage{todonotes} % Useful to put TODO side notes
+\usepackage{authblk} % Allows authors with affiliations
+\usepackage{lastpage}	% Allows referencing the last page
+\usepackage[style=british]{csquotes} % Allows block quotations
+\usepackage{titlesec}
+\usepackage{multicol} % Multicolumn environment
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{pdflscape} % Rotate pages (for wide pages)
+\usepackage{subcaption}
+\usepackage{nameref}	% Allows references by name ("Section 5" vs "Conclusions")
+\usepackage{lipsum} % Lorem ipsum
+\usepackage[
+	backend=biber,
+	natbib=true,
+	bibstyle=authoryear,
+	citestyle=authoryear,
+	sorting=nyt,
+	block=space,
+	hyperref=true,
+	dashed=false
+]{biblatex}
+\usepackage{hyperref}
+\hypersetup{
+  unicode=true,
+ 	pdfpagemode={UseOutlines},
+ 	pdfstartview={FitV},
+	bookmarks=true,
+	bookmarksopen=true,
+	bookmarksopenlevel=0,
+	bookmarksnumbered=true,
+	breaklinks=true, % to have links breaking among lines
+	hypertexnames=true,
+	plainpages=false,
+	hidelinks=false,
+	colorlinks=true,
+	citecolor=Turquoise4,
+	filecolor=black,
+	linkcolor=DeepSkyBlue4,
+	urlcolor=RoyalBlue3,
+	anchorcolor=RoyalBlue3
+}
+\usepackage[acronym,toc]{glossaries} % Acronyms lists
+
+% **************************************************************** %
+%                        Command definitions
+% **************************************************************** %
+\makeatletter % **** **** **** **** **** **** MAKEATLETTER
+
+% useful cross referencing commands
+\newcommand{\fref}[1]{Figure~\ref{#1}}
+\newcommand{\tref}[1]{Table~\ref{#1}}
+\newcommand{\eref}[1]{Equation~\ref{#1}}
+\newcommand{\cref}[1]{Chapter~\ref{#1}}
+\newcommand{\sref}[1]{Section~\ref{#1}}
+\newcommand{\aref}[1]{Appendix~\ref{#1}}
+\newcommand{\alref}[1]{Algorithm~\ref{#1}}
+\newcommand{\procref}[1]{Procedure~\ref{#1}}
+
+% document parts
+\newcommand{\frontmatter}{%
+	\cleardoublepage
+	\pagenumbering{roman}}
+\newcommand{\mainmatter}{%
+	\cleardoublepage
+	\pagenumbering{arabic}}
+\newcommand{\backmatter}{%
+	\cleardoublepage
+}
+
+% author "and" for title page
+\renewcommand\Authands{ and }
+
+% the norm of vectors
+\newcommand{\norm}[1]{\lvert #1 \rvert}
+
+\makeatother % **** **** **** **** **** **** MAKEATOTHER
+
+% **************************************************************** %
+%                          New environments
+% **************************************************************** %
+% checklist environment
+\newenvironment{checklist}{%
+  \begin{list}{}{}% whatever you want the list to be
+  \let\olditem\item
+  \renewcommand\item{\olditem[$\Box$] }
+  \newcommand\checkeditem{\olditem[$\CheckedBox$] }
+}{%
+  \end{list}
+}
+
+% **************************************************************** %
+%                               Format
+% **************************************************************** %
+% Koma Script font modifications
+\setkomafont{author}{\small}
+\setkomafont{date}{\scshape}
+\renewcommand*{\bibfont}{\small}
+
+% Formatting for paragraphs (indentation and space after par.)
+\setlength{\parskip}{0.5\baselineskip}%
+\setlength{\parindent}{0pt}%
+%\setlength{\textfloatsep}{8pt plus 1.0pt minus 2.0pt}
+%\setlength{\floatsep}{5.0pt plus 1.0pt minus 1.0pt}
+
+% Column separation for multicols environment
+\setlength{\columnsep}{2em}
+
+% SI units range separator (en-dash)
+\sisetup{range-phrase=--}
+% New SI units
+\DeclareSIUnit{\tex}{tex}
+\DeclareSIUnit{\yr}{yr}
+\DeclareSIUnit{\person}{person}
+
+% Reduce space after sections
+\titlespacing{\section}{0pt}{\parskip}{-0.5\parskip}
+\titlespacing{\subsection}{0pt}{\parskip}{-0.5\parskip}
+\titlespacing{\subsubsection}{0pt}{\parskip}{-0.5\parskip}
+
+% Configuration of the blockquotes paragraphs
+\SetBlockThreshold{1} % all blockquotes of 1 or more lines are treated as blocks
+
+% **************************************************************** %
+%                     Glossaries and References
+% **************************************************************** %
+
+% Glossaries (acronyms) files
+\makeglossaries % BEFORE the inclusion of glossaries
+\include{glossary}
+
+% References files (BibTeX's)
+\addbibresource{references.bib}
+
+% **************************************************************** %
+%                            Title page
+% **************************************************************** %
+\title{\vspace{1cm}Thesis Title}
+\subtitle{Thesis subtitle\vspace{8cm}}
+
+\author{David Martínez Rodríguez (\footnotesize\texttt{davidmr@kth.se})}
+\affil{MSc Student, KTH}
+
+	% Hijacked \date command to add course information
+\date{
+	\textsc{MJXXXX MSc Thesis}\\
+  	\textsc{Division of Industrial Ecology, SEED, ABE, KTH}\\
+	\textsc{Spring 2017}\\[0.5cm]
+	\today
+}
+
+% **************************************************************** %
+%                             Document
+% **************************************************************** %
+\begin{document}
+% Title page
+\maketitle
+\thispagestyle{empty}
+
+% Front matter: abstract, table of contents, acknowledgements...
+%   !they are all Roman numbered!
+\frontmatter
+%\include{abstract}
+{\hypersetup{linkcolor=DeepSkyBlue4!60!black}
+\tableofcontents % Content Index
+\printglossaries
+}
+
+% Main matter: the actual content of the report
+\mainmatter
+\include{chapters/introduction}
+\include{chapters/methods}
+\include{chapters/results}
+\include{chapters/discussion}
+\include{chapters/conclusion}
+
+% Back matter: references and appendices
+\backmatter
+%\nocite{*} % remove the comment to automatically include all references that are not directly cited in the document
+
+\renewcommand{\UrlFont}{\footnotesize}
+\printbibliography
+
+\appendix
+%\include{appendix}
+
+\end{document}
