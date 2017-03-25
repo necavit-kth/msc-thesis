@@ -6,6 +6,11 @@
 \documentclass[a4paper,11pt,bibliography=totoc]{scrreprt}
 
 % **************************************************************** %
+%                  User Defined Variables (commands)
+% **************************************************************** %
+\input{variables}
+
+% **************************************************************** %
 %                            Packages
 % **************************************************************** %
 %\usepackage[top=1in,bottom=1.25in,left=1.25in,right=1.25in]{geometry}								% Custom margins (comment out if not needed)
@@ -38,36 +43,36 @@
 \usepackage{nameref}	% Allows references by name ("Section 5" vs "Conclusions")
 \usepackage{lipsum} % Lorem ipsum
 \usepackage[
-	backend=biber,
-	natbib=true,
-	bibstyle=authoryear,
-	citestyle=authoryear,
-	sorting=nyt,
-	block=space,
-	hyperref=true,
-	dashed=false
+backend=biber,
+natbib=true,
+bibstyle=authoryear,
+citestyle=authoryear,
+sorting=nyt,
+block=space,
+hyperref=true,
+dashed=false
 ]{biblatex}
 \usepackage{hyperref}
 \hypersetup{
-  unicode=true,
- 	pdfpagemode={UseOutlines},
- 	pdfstartview={FitV},
-	bookmarks=true,
-	bookmarksopen=true,
-	bookmarksopenlevel=0,
-	bookmarksnumbered=true,
-	breaklinks=true, % to have links breaking among lines
-	hypertexnames=true,
-	plainpages=false,
-	hidelinks=false,
-	colorlinks=true,
-	citecolor=Turquoise4,
-	filecolor=black,
-	linkcolor=DeepSkyBlue4,
-	urlcolor=RoyalBlue3,
-	anchorcolor=RoyalBlue3
+unicode=true,
+pdfpagemode={UseOutlines},
+pdfstartview={FitV},
+bookmarks=true,
+bookmarksopen=true,
+bookmarksopenlevel=0,
+bookmarksnumbered=true,
+breaklinks=true, % to have links breaking among lines
+hypertexnames=true,
+plainpages=false,
+hidelinks=false,
+colorlinks=true,
+citecolor=Turquoise4,
+filecolor=black,
+linkcolor=DeepSkyBlue4,
+urlcolor=RoyalBlue3,
+anchorcolor=RoyalBlue3
 }
-\usepackage[acronym,toc]{glossaries} % Acronyms lists
+\usepackage[acronym,toc,nopostdot,nonumberlist]{glossaries} % Acronyms lists
 
 % **************************************************************** %
 %                        Command definitions
@@ -149,12 +154,12 @@
 \SetBlockThreshold{1} % all blockquotes of 1 or more lines are treated as blocks
 
 % **************************************************************** %
-%                     Glossaries and References
+%                   Glossaries and References
 % **************************************************************** %
 
 % Glossaries (acronyms) files
 \makeglossaries % BEFORE the inclusion of glossaries
-\include{glossary}
+\input{glossary}
 
 % References files (BibTeX's)
 \addbibresource{references.bib}
@@ -162,17 +167,17 @@
 % **************************************************************** %
 %                            Title page
 % **************************************************************** %
-\title{\vspace{1cm}Thesis Title}
-\subtitle{Thesis subtitle\vspace{8cm}}
+\title{\vspace{1cm}\thesisTitle}
+\subtitle{\thesisSubtitle\vspace{8cm}}
 
-\author{David Martínez Rodríguez (\footnotesize\texttt{davidmr@kth.se})}
-\affil{MSc Student, KTH}
+\author{\authorFullName (\footnotesize\texttt{\authorEmail})}
+\affil{\authorAffiliation}
 
 	% Hijacked \date command to add course information
 \date{
-	\textsc{MJXXXX MSc Thesis}\\
-  	\textsc{Division of Industrial Ecology, SEED, ABE, KTH}\\
-	\textsc{Spring 2017}\\[0.5cm]
+	\textsc{\thesisCourseCode MSc Thesis}\\
+  	\textsc{\departmentFull}\\
+	\textsc{\academicTerm}\\[0.5cm]
 	\today
 }
 
@@ -188,10 +193,10 @@
 %   !they are all Roman numbered!
 \frontmatter
 %\include{abstract}
-{\hypersetup{linkcolor=DeepSkyBlue4!60!black}
+{\hypersetup{linkcolor=\TOCLinkColour}
 \tableofcontents % Content Index
-\printglossaries
 }
+\printglossary[type=\acronymtype,title={\glossariesTOCTitle}]
 
 % Main matter: the actual content of the report
 \mainmatter
