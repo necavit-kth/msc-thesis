@@ -15,6 +15,7 @@
 % **************************************************************** %
 %\usepackage[top=1in,bottom=1.25in,left=1.25in,right=1.25in]{geometry}								% Custom margins (comment out if not needed)
 \usepackage[english]{babel}	% Language settings
+\usepackage{etoolbox}
 \usepackage{lmodern} % Use Latin Modern font
 \usepackage[nointegrals]{wasysym}
 \usepackage{microtype} % Enhanced typesetting (better reading)
@@ -24,6 +25,7 @@
 \usepackage[table,hyperref,x11names,svgnames]{xcolor}	% Allows coloring tables
 \usepackage[section]{placeins} % Ensure float elems. inside their section
 \usepackage{booktabs}	% Beautiful, professional tables
+\usepackage{longtable}
 \usepackage{adjustbox} % Boxing capabilities for images and text
 \usepackage{multirow}	% Enables tabular cells spanning multiple rows
 \usepackage{array} % Enables custom table column defintions
@@ -31,7 +33,7 @@
 \usepackage{enumitem}	% Customized enumerations and itemizes
 \usepackage[version=3]{mhchem} % Allows inclusion of chemical formulas and eq.
 \usepackage{siunitx} % SI units standard
-\usepackage{todonotes} % Useful to put TODO side notes
+\usepackage[textwidth=1.25\marginparwidth]{todonotes} % Useful to put TODO side notes
 \usepackage{authblk} % Allows authors with affiliations
 \usepackage{lastpage}	% Allows referencing the last page
 \usepackage[style=british]{csquotes} % Allows block quotations
@@ -72,7 +74,12 @@ linkcolor=DeepSkyBlue4,
 urlcolor=RoyalBlue3,
 anchorcolor=RoyalBlue3
 }
-\usepackage[acronym,toc,nopostdot,nonumberlist]{glossaries} % Acronyms lists
+\usepackage[
+acronym,
+toc,
+nopostdot,
+hyperfirst=false
+]{glossaries} % Acronyms lists
 
 % **************************************************************** %
 %                        Command definitions
@@ -106,6 +113,8 @@ anchorcolor=RoyalBlue3
 % the norm of vectors
 \newcommand{\norm}[1]{\lvert #1 \rvert}
 
+\renewcommand{\todo}[2][]{\@bsphack\@todo[fancyline,size=\footnotesize,#1]{#2}\@esphack\ignorespaces}%
+
 \makeatother % **** **** **** **** **** **** MAKEATOTHER
 
 % **************************************************************** %
@@ -127,6 +136,8 @@ anchorcolor=RoyalBlue3
 % Koma Script font modifications
 \setkomafont{author}{\small}
 \setkomafont{date}{\scshape}
+\setkomafont{caption}{\normalsize} % needed because longtables with smaller text
+  % have to be "surrounded" by \footnotesize groups, thus reducing caption sizes
 \renewcommand*{\bibfont}{\small}
 
 % Formatting for paragraphs (indentation and space after par.)
@@ -159,6 +170,16 @@ anchorcolor=RoyalBlue3
 
 % Glossaries (acronyms) files
 \makeglossaries % BEFORE the inclusion of glossaries
+
+% Redefine glossaries so that the first entry is hyperlinked but not
+% subsequent appearances
+\renewcommand{\glsentryfmt}{%
+  \ifglsused{\glslabel}
+    {\glsgenentryfmt}% entry has been used.
+    {\glshyperlink[\glsgenentryfmt]{\glslabel}}% entry hasn't been used
+}
+
+% Load glossary file (acronyms, etc.)
 \input{glossary}
 
 % References files (BibTeX's)
@@ -197,6 +218,7 @@ anchorcolor=RoyalBlue3
 \tableofcontents % Content Index
 }
 \printglossary[type=\acronymtype,title={\glossariesTOCTitle}]
+\listoftodos
 
 % Main matter: the actual content of the report
 \mainmatter
