@@ -3,7 +3,18 @@
 % **************************************************************** %
 % Class of the document: KOMA Script Report
 %   Options: 12 points font, A4 paper, bibliography in ToC
-\documentclass[a4paper,11pt,bibliography=totoc]{scrreprt}
+\documentclass[
+	a4paper,
+	11pt,
+	bibliography=totoc,
+	headsepline=true,
+	footnotes=multiple,
+	chapterprefix=true,
+	headings=normal,
+	captions=tableheading,
+	origlongtable,
+	listof=totoc
+]{scrreprt}
 
 % **************************************************************** %
 %                  User Defined Variables (commands)
@@ -101,13 +112,15 @@ hyperfirst=false
 % document parts
 \newcommand{\frontmatter}{%
 	\cleardoublepage
-	\pagenumbering{roman}}
+	\pagenumbering{roman}
+	\pagestyle{plain}}
 \newcommand{\mainmatter}{%
 	\cleardoublepage
-	\pagenumbering{arabic}}
+	\pagenumbering{arabic}
+	\pagestyle{headings}}
 \newcommand{\backmatter}{%
 	\cleardoublepage
-}
+	\pagestyle{plain}}
 
 % author "and" for title page
 \renewcommand\Authands{ and }
@@ -198,7 +211,8 @@ hyperfirst=false
 
 	% Hijacked \date command to add course information
 \date{
-	\textsc{\thesisCourseCode MSc Thesis}\\
+	\todo[inline]{!!! Turn this into the generated KTH cover and back pages !!!}
+	\textsc{\thesisCourseCode~MSc Thesis}\\
   	\textsc{\departmentFull}\\
 	\textsc{\academicTerm}\\[0.5cm]
 	\today
@@ -218,9 +232,11 @@ hyperfirst=false
 %\include{abstract}
 {\hypersetup{linkcolor=\TOCLinkColour}
 \tableofcontents % Content Index
+\listoffigures
+\listoftables
 }
-\printglossary[type=\acronymtype,title={\glossariesTOCTitle}]
-\listoftodos
+\printglossary[type=\acronymtype,title={\acronymsTOCTitle}]
+\listoftodos %TODO remove this!
 
 % Main matter: the actual content of the report
 \mainmatter
