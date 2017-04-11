@@ -43,8 +43,12 @@
 \usepackage[toc,page]{appendix}	% Appendices title customisation
 \usepackage{enumitem}	% Customized enumerations and itemizes
 \usepackage[version=3]{mhchem} % Allows inclusion of chemical formulas and eq.
+\usepackage{amssymb}
 \usepackage{siunitx} % SI units standard
-\usepackage[textwidth=1.25\marginparwidth]{todonotes} % Useful to put TODO side notes
+\usepackage[
+textwidth=\marginparwidth,
+colorinlistoftodos
+]{todonotes} % Useful to put TODO side notes
 \usepackage{authblk} % Allows authors with affiliations
 \usepackage{lastpage}	% Allows referencing the last page
 \usepackage[style=british]{csquotes} % Allows block quotations
@@ -55,6 +59,7 @@
 \usepackage{subcaption}
 \usepackage{nameref}	% Allows references by name ("Section 5" vs "Conclusions")
 \usepackage{lipsum} % Lorem ipsum
+\usepackage[framemethod=TikZ]{mdframed} % Info boxes
 \usepackage[
 backend=biber,
 natbib=true,
@@ -83,7 +88,7 @@ hidelinks=false,
 colorlinks=true,
 citecolor=Turquoise4,
 filecolor=black,
-linkcolor=DeepSkyBlue4,
+linkcolor=DeepSkyBlue4!50!black,
 urlcolor=RoyalBlue3,
 anchorcolor=RoyalBlue3
 }
@@ -128,7 +133,15 @@ hyperfirst=false
 % the norm of vectors
 \newcommand{\norm}[1]{\lvert #1 \rvert}
 
-\renewcommand{\todo}[2][]{\@bsphack\@todo[fancyline,size=\footnotesize,#1]{#2}\@esphack\ignorespaces}%
+% todo's
+\renewcommand{\todo}[2][]{%
+	\@bsphack\@todo[fancyline,#1]{#2}\@esphack\ignorespaces}%
+\newcommand{\todocite}[1]{\todo[size=\footnotesize,color=green!40]{#1}}
+\newcommand{\todonote}[1]{\todo[size=\footnotesize]{#1}}
+\newcommand{\todoparagraph}[1]{%
+	\todo[color=yellow!40,bordercolor=yellow!40,inline]{#1}}
+\newcommand{\todowarning}[1]{%
+	\todo[color=red!40,bordercolor=red,inline]{#1}}
 
 \makeatother % **** **** **** **** **** **** MAKEATOTHER
 
@@ -143,6 +156,32 @@ hyperfirst=false
   \newcommand\checkeditem{\olditem[$\CheckedBox$] }
 }{%
   \end{list}
+}
+
+%% Infobox style
+% Setting box counter
+\newcounter{infobox}[chapter]
+\renewcommand{\theinfobox}{\thechapter.\arabic{infobox}}
+% The environment
+\newenvironment{infobox}[1][]{%
+    \refstepcounter{infobox}
+    \begin{mdframed}[%
+        frametitle={Box \theinfobox\ #1},
+        skipabove=\baselineskip plus 2pt minus 1pt,
+        skipbelow=\baselineskip plus 2pt minus 1pt,
+        leftmargin=12pt,
+        rightmargin=12pt,
+        frametitleaboveskip=7pt,
+        frametitlebelowskip=7pt,
+        linewidth=0.5pt,
+        linecolor=black,
+        frametitlerule=true,
+        frametitlebackgroundcolor=white,
+        backgroundcolor=white,
+        roundcorner=0pt,
+    ]%
+}{%
+    \end{mdframed}
 }
 
 % **************************************************************** %
@@ -211,7 +250,7 @@ hyperfirst=false
 
 	% Hijacked \date command to add course information
 \date{
-	\todo[inline]{!!! Turn this into the generated KTH cover and back pages !!!}
+	\todowarning{!!! Turn this into the generated KTH cover and back pages !!!}
 	\textsc{\thesisCourseCode~MSc Thesis}\\
   	\textsc{\departmentFull}\\
 	\textsc{\academicTerm}\\[0.5cm]
@@ -230,14 +269,15 @@ hyperfirst=false
 %   !they are all Roman numbered!
 \frontmatter
 %\include{abstract}
-{\hypersetup{linkcolor=\TOCLinkColour}
 \tableofcontents % Content Index
 \listoffigures
 \listoftables
-}
 \printglossary[type=\acronymtype,title={\acronymsTOCTitle}]
+\todototoc
+{\hypersetup{colorlinks=false,linkbordercolor=red,linkcolor=black}
+\footnotesize
 \listoftodos %TODO remove this!
-
+}
 % Main matter: the actual content of the report
 \mainmatter
 \include{chapters/introduction}
