@@ -10,7 +10,6 @@
 	headsepline=true,
 	footnotes=multiple,
 	chapterprefix=true,
-	headings=normal,
 	captions=tableheading,
 	origlongtable,
 	listof=totoc
@@ -88,7 +87,7 @@ hidelinks=false,
 colorlinks=true,
 citecolor=Turquoise4,
 filecolor=black,
-linkcolor=DeepSkyBlue4!50!black,
+linkcolor=Turquoise4, %DeepSkyBlue4!50!black,
 urlcolor=RoyalBlue3,
 anchorcolor=RoyalBlue3
 }
@@ -139,7 +138,7 @@ hyperfirst=false
 \newcommand{\todocite}[1]{\todo[size=\footnotesize,color=green!40]{#1}}
 \newcommand{\todonote}[1]{\todo[size=\footnotesize]{#1}}
 \newcommand{\todoparagraph}[1]{%
-	\todo[color=yellow!40,bordercolor=yellow!40,inline]{#1}}
+	\todo[color=yellow!40,bordercolor=yellow!40,inline,caption={}]{#1}}
 \newcommand{\todowarning}[1]{%
 	\todo[color=red!40,bordercolor=red,inline]{#1}}
 
@@ -180,6 +179,7 @@ hyperfirst=false
         backgroundcolor=white,
         roundcorner=0pt,
     ]%
+    \sffamily
 }{%
     \end{mdframed}
 }
