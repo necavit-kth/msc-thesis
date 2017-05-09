@@ -44,10 +44,7 @@
 \usepackage[version=3]{mhchem} % Allows inclusion of chemical formulas and eq.
 \usepackage{amssymb}
 \usepackage{siunitx} % SI units standard
-\usepackage[
-textwidth=\marginparwidth,
-colorinlistoftodos
-]{todonotes} % Useful to put TODO side notes
+\usepackage[textwidth=\marginparwidth,colorinlistoftodos]{todonotes}
 \usepackage{authblk} % Allows authors with affiliations
 \usepackage{lastpage}	% Allows referencing the last page
 \usepackage[style=british]{csquotes} % Allows block quotations
@@ -85,13 +82,12 @@ hypertexnames=true,
 plainpages=false,
 hidelinks=false,
 colorlinks=true,
-citecolor=Turquoise4,
+citecolor=DeepSkyBlue4,
 filecolor=black,
-linkcolor=Turquoise4, %DeepSkyBlue4!50!black,
-urlcolor=RoyalBlue3,
-anchorcolor=RoyalBlue3
+linkcolor=DeepSkyBlue4, %DeepSkyBlue4!50!black,
+urlcolor=DeepSkyBlue4,
+anchorcolor=DeepSkyBlue4
 }
-\usepackage[capitalise,noabbrev]{cleveref} % smart, capitalised cross-references
 \usepackage[
 acronym,
 toc,
@@ -105,14 +101,15 @@ hyperfirst=false
 \makeatletter % **** **** **** **** **** **** MAKEATLETTER
 
 % useful cross referencing commands
-%\newcommand{\fref}[1]{Figure~\ref{#1}}
-%\newcommand{\tref}[1]{Table~\ref{#1}}
-%\newcommand{\eref}[1]{Equation~\ref{#1}}
-%\newcommand{\cref}[1]{Chapter~\ref{#1}}
-%\newcommand{\sref}[1]{Section~\ref{#1}}
-%\newcommand{\aref}[1]{Appendix~\ref{#1}}
-%\newcommand{\alref}[1]{Algorithm~\ref{#1}}
-%\newcommand{\procref}[1]{Procedure~\ref{#1}}
+\newcommand{\fref}[1]{Figure~\ref{#1}}
+\newcommand{\tref}[1]{Table~\ref{#1}}
+\newcommand{\eref}[1]{Equation~\ref{#1}}
+\newcommand{\cref}[1]{Chapter~\ref{#1}}
+\newcommand{\sref}[1]{Section~\ref{#1}}
+\newcommand{\ssref}[1]{Subsection~\ref{#1}}
+\newcommand{\aref}[1]{Appendix~\ref{#1}}
+\newcommand{\alref}[1]{Algorithm~\ref{#1}}
+\newcommand{\procref}[1]{Procedure~\ref{#1}}
 
 % document parts
 \newcommand{\frontmatter}{%
@@ -188,8 +185,6 @@ hyperfirst=false
 % **************************************************************** %
 %                               Format
 % **************************************************************** %
-\crefname{subsection}{Subsection}{Subsections}
-\Crefname{subsection}{Subsection}{Subsections}
 % Koma Script font modifications
 \setkomafont{author}{\small}
 \setkomafont{date}{\scshape}
@@ -279,7 +274,7 @@ hyperfirst=false
 \todototoc
 {\hypersetup{colorlinks=false,linkbordercolor=red,linkcolor=black}
 \footnotesize
-\listoftodos %TODO remove this!
+\listoftodos
 }
 % Main matter: the actual content of the report
 \mainmatter
@@ -297,6 +292,6 @@ hyperfirst=false
 \printbibliography
 
 \appendix
-%\include{appendix}
+\include{appendix_ssp1-narrative}
 
 \end{document}

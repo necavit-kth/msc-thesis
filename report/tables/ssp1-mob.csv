@@ -1,0 +1,32 @@
+Category,Variable or feature,Trend or status
+Development scenario,Societal sustainability awareness,High
+,Travel demand per capita (pkm/yr),Lower than the baseline (2017)
+,Total travel demand (pkm/yr),Higher than the baseline (2017)
+,Consumption patterns,Less carbon (travel) intensive consumption; lower consumption levels
+,Carbon intensity,Low; the system is as decarbonized as possible (electrification)
+,IT access,"Widespread, high speed and capacity networks; IT services for teleworking, car sharing, intermodal travel, …"
+Land use (urban development),Urban density,High (higher than 2017 baseline)
+,Land use patterns,Mixed-use development paradigm
+,Economic centralisation,"Medium; cities are hotspots, but jobs are spread amongst them"
+,City sizes,Medium; avoidance of megacities or (sub)urban sprawl
+Travel modes share,Intermodal travel,"Facilitated, high acceptancy and usage"
+,"Public transport (rail, bus, aviation)",Majority of demand supply; much higher than the baseline (2017)
+,Automobility (private vehicles),"Still relevant, but much lower than the baseline (2017)"
+,Slow modes (walking and cycling),Higher than the baseline (2017)
+Cultural perception,Mobility,"Accessibility, local in scale, slowed down, managed, reasonable travel time and reliability, integrated"
+,Public transport,"Public mobility as a reliable, comfortable, enjoyable and accessible service"
+,Automobility,Automobility as a utility to serve a special need
+Public transport,Reliability,High
+,Consumer cost,Low
+,Accessibility,High
+,Safety,High
+,Public transport infrastructure investments,High and continuous
+Automobility,Reliability,High
+,Consumer cost,High
+,Accessibility,High (especially in rural or remote areas)
+,Safety,High (higher risk than public transport)
+,"Automobility infrastructure investments (roads, fuel stations, etc.)",Low to medium; maintenance covers the majority of the investments; capacity is not increased
+Fuel technology,Automobiles,Battery electric vehicles for short-medium ranged trips; hydrogen fuelled for long range
+,Rail,Full electrification of the network
+,Bus,Electric or hydrogen-fuelled
+,Aviation,Renewable biofuels
