@@ -155,6 +155,12 @@ hyperfirst=false
   \end{list}
 }
 
+\newenvironment{enumeratealpha}{%
+	\begin{enumerate}[label=(\alph*)]
+}{%
+	\end{enumerate}
+}
+
 %% Infobox style
 % Setting box counter
 \newcounter{infobox}[chapter]
@@ -209,9 +215,9 @@ hyperfirst=false
 \DeclareSIUnit{\person}{person}
 
 % Reduce space after sections
-\titlespacing{\section}{0pt}{\parskip}{-0.5\parskip}
-\titlespacing{\subsection}{0pt}{\parskip}{-0.5\parskip}
-\titlespacing{\subsubsection}{0pt}{\parskip}{-0.5\parskip}
+%\titlespacing{\section}{0pt}{\parskip}{-0.5\parskip}
+%\titlespacing{\subsection}{0pt}{\parskip}{-0.5\parskip}
+%\titlespacing{\subsubsection}{0pt}{\parskip}{-0.5\parskip}
 
 % Configuration of the blockquotes paragraphs
 \SetBlockThreshold{1} % all blockquotes of 1 or more lines are treated as blocks
