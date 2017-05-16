@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="160mm" height="90mm" viewBox="0 0 16000 9000" version="1.1" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" stroke-width="28.222" stroke-linejoin="round" xml:space="preserve">
+ <path fill="rgb(255,255,255)" stroke="none" d="M 7996,8999 L -4,8999 -4,0 15995,0 15995,8999 7996,8999 Z"/>
+ <path fill="none" stroke="rgb(238,238,238)" stroke-linejoin="round" d="M 6779,4499 L 6779,4499 Z"/>
+ <path fill="none" stroke="rgb(238,238,238)" stroke-linejoin="round" d="M 6779,3543 L 6103,3823 5823,4499 6103,5174 6779,5455 7455,5174 7736,4499 7455,3823 6779,3543 Z"/>
+ <path fill="none" stroke="rgb(238,238,238)" stroke-linejoin="round" d="M 6779,2586 L 5426,3146 4866,4499 5426,5851 6779,6411 8131,5851 8691,4499 8131,3146 6779,2586 Z"/>
+ <path fill="none" stroke="rgb(238,238,238)" stroke-linejoin="round" d="M 6779,1630 L 4750,2470 3910,4499 4750,6527 6779,7368 8807,6527 9648,4499 8807,2470 6779,1630 Z"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 6779,1630 L 4750,2470 3910,4499 4750,6527 6779,7368 8807,6527 9648,4499 8807,2470 6779,1630 Z"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 6779,4499 L 6779,1630"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 6779,4499 L 4750,2470"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 6779,4499 L 3910,4499"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 6779,4499 L 4750,6527"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 6779,4499 L 6779,7368"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 6779,4499 L 8807,6527"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 6779,4499 L 9648,4499"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 6779,4499 L 8807,2470"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 6779,4499 L 6779,1630"/>
+ <path fill="none" stroke="rgb(255,0,0)" stroke-width="80" stroke-linejoin="round" d="M 6779,3543 L 4750,2470 3910,4499 4750,6527 6779,6889 8131,5851 8691,4499 8131,3146 6779,3543 Z"/>
+ <path fill="none" stroke="rgb(255,153,0)" stroke-width="80" stroke-linejoin="round" d="M 6779,2586 L 5088,2808 4388,4499 5426,5851 6779,6411 8131,5851 9169,4499 8469,2808 6779,2586 Z"/>
+ <path fill="none" stroke="rgb(0,204,0)" stroke-width="80" stroke-linejoin="round" d="M 6779,1630 L 5426,3146 4866,4499 6103,5174 6779,5455 7455,5174 9169,4499 8807,2470 6779,1630 Z"/>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans" font-size="353px" font-weight="400"><tspan class="TextPosition" x="4042" y="964"><tspan fill="rgb(0,0,0)" stroke="none">Societal sustainability awareness</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans" font-size="353px" font-weight="400"><tspan class="TextPosition" x="412" y="1973"><tspan fill="rgb(0,0,0)" stroke="none">Economic centralisation</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans" font-size="353px" font-weight="400"><tspan class="TextPosition" x="1762" y="4620"><tspan fill="rgb(0,0,0)" stroke="none">City sizes</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans" font-size="353px" font-weight="400"><tspan class="TextPosition" x="1652" y="7267"><tspan fill="rgb(0,0,0)" stroke="none">Carbon intensity</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans" font-size="353px" font-weight="400"><tspan class="TextPosition" x="5146" y="8277"><tspan fill="rgb(0,0,0)" stroke="none">Consumption levels</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans" font-size="353px" font-weight="400"><tspan class="TextPosition" x="9214" y="7267"><tspan fill="rgb(0,0,0)" stroke="none">Travel demand per capita</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans" font-size="353px" font-weight="400"><tspan class="TextPosition" x="10224" y="4620"><tspan fill="rgb(0,0,0)" stroke="none">Total travel demand</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans" font-size="353px" font-weight="400"><tspan class="TextPosition" x="9214" y="1973"><tspan fill="rgb(0,0,0)" stroke="none">Urban density</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans" font-size="282px" font-weight="400"><tspan class="TextPosition" x="6879" y="4605"><tspan fill="rgb(0,0,0)" stroke="none">0</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans" font-size="282px" font-weight="400"><tspan class="TextPosition" x="6879" y="3649"><tspan fill="rgb(0,0,0)" stroke="none">1</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans" font-size="282px" font-weight="400"><tspan class="TextPosition" x="6879" y="2692"><tspan fill="rgb(0,0,0)" stroke="none">2</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans" font-size="282px" font-weight="400"><tspan class="TextPosition" x="6879" y="1736"><tspan fill="rgb(0,0,0)" stroke="none">3</tspan></tspan></tspan></text>
+ <path fill="none" stroke="rgb(255,0,0)" stroke-width="80" stroke-linejoin="round" d="M 13920,3974 L 14720,3974"/>
+ <path fill="none" stroke="rgb(255,153,0)" stroke-width="80" stroke-linejoin="round" d="M 13920,4499 L 14720,4499"/>
+ <path fill="none" stroke="rgb(0,204,0)" stroke-width="80" stroke-linejoin="round" d="M 13920,5023 L 14720,5023"/>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans" font-size="353px" font-weight="400"><tspan class="TextPosition" x="14820" y="4095"><tspan fill="rgb(0,0,0)" stroke="none">2017</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans" font-size="353px" font-weight="400"><tspan class="TextPosition" x="14820" y="4619"><tspan fill="rgb(0,0,0)" stroke="none">2050</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans" font-size="353px" font-weight="400"><tspan class="TextPosition" x="14820" y="5144"><tspan fill="rgb(0,0,0)" stroke="none">2100</tspan></tspan></tspan></text>
+</svg>

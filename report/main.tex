@@ -4,6 +4,7 @@
 % Class of the document: KOMA Script Report
 %   Options: 12 points font, A4 paper, bibliography in ToC
 \documentclass[
+%	draft,
 	a4paper,
 	11pt,
 	bibliography=totoc,
@@ -31,7 +32,6 @@
 \usepackage{microtype} % Enhanced typesetting (better reading)
 \usepackage{graphicx}	% Enhanced graphics processing
 \usepackage{url}
-\usepackage{breakurl}
 \usepackage[table,hyperref,x11names,svgnames]{xcolor}	% Allows coloring tables
 \usepackage[section]{placeins} % Ensure float elems. inside their section
 \usepackage{booktabs}	% Beautiful, professional tables
@@ -44,11 +44,10 @@
 \usepackage[version=3]{mhchem} % Allows inclusion of chemical formulas and eq.
 \usepackage{amssymb}
 \usepackage{siunitx} % SI units standard
-\usepackage[textwidth=\marginparwidth,colorinlistoftodos]{todonotes}
+\usepackage[textwidth=\marginparwidth,colorinlistoftodos,obeyDraft]{todonotes}
 \usepackage{authblk} % Allows authors with affiliations
 \usepackage{lastpage}	% Allows referencing the last page
 \usepackage[style=british]{csquotes} % Allows block quotations
-\usepackage{titlesec}
 \usepackage{multicol} % Multicolumn environment
 \usepackage[font=small,labelfont=bf]{caption}
 \usepackage{pdflscape} % Rotate pages (for wide pages)
@@ -68,6 +67,7 @@ dashed=false
 ]{biblatex}
 \usepackage{hyperref}
 \hypersetup{
+final,
 unicode=true,
 pdftitle={\thesisTitle},
 pdfauthor={\authorFullName},
@@ -99,7 +99,6 @@ hyperfirst=false
 %                        Command definitions
 % **************************************************************** %
 \makeatletter % **** **** **** **** **** **** MAKEATLETTER
-
 % useful cross referencing commands
 \newcommand{\fref}[1]{Figure~\ref{#1}}
 \newcommand{\tref}[1]{Table~\ref{#1}}
@@ -136,9 +135,11 @@ hyperfirst=false
 \newcommand{\todocite}[1]{\todo[size=\footnotesize,color=green!40]{#1}}
 \newcommand{\todonote}[1]{\todo[size=\footnotesize]{#1}}
 \newcommand{\todoparagraph}[1]{%
-	\todo[color=yellow!40,bordercolor=yellow!40,inline,caption={}]{#1}}
+	\todo[color=yellow!40,bordercolor=yellow!40,inline]{#1}}
 \newcommand{\todowarning}[1]{%
 	\todo[color=red!40,bordercolor=red,inline]{#1}}
+\newcommand{\todocomment}[1]{%
+	\todo[color=teal!40,bordercolor=teal,inline]{#1}}
 
 \makeatother % **** **** **** **** **** **** MAKEATOTHER
 
@@ -218,6 +219,7 @@ hyperfirst=false
 \DeclareSIUnit{\person}{person}
 
 % Reduce space after sections
+%\usepackage{titlesec}
 %\titlespacing{\section}{0pt}{\parskip}{-0.5\parskip}
 %\titlespacing{\subsection}{0pt}{\parskip}{-0.5\parskip}
 %\titlespacing{\subsubsection}{0pt}{\parskip}{-0.5\parskip}
@@ -280,11 +282,9 @@ hyperfirst=false
 \listoffigures
 \listoftables
 \printglossary[type=\acronymtype,title={\acronymsTOCTitle}]
-\todototoc
-{\hypersetup{colorlinks=false,linkbordercolor=red,linkcolor=black}
-\footnotesize
-\listoftodos
-}
+\todototoc %should be placed right before the \listoftodos command
+{\footnotesize \listoftodos}
+
 % Main matter: the actual content of the report
 \mainmatter
 \include{chapters/introduction}
