@@ -4,7 +4,7 @@
 % Class of the document: KOMA Script Report
 %   Options: 12 points font, A4 paper, bibliography in ToC
 \documentclass[
-%	draft,
+	draft,
 	a4paper,
 	11pt,
 	bibliography=totoc,
@@ -30,7 +30,7 @@
 \usepackage{lmodern} % Use Latin Modern font
 \usepackage[nointegrals]{wasysym}
 \usepackage{microtype} % Enhanced typesetting (better reading)
-\usepackage{graphicx}	% Enhanced graphics processing
+\usepackage[final]{graphicx}	% Enhanced graphics processing
 \usepackage{url}
 \usepackage[table,hyperref,x11names,svgnames]{xcolor}	% Allows coloring tables
 \usepackage[section]{placeins} % Ensure float elems. inside their section
@@ -198,6 +198,7 @@ hyperfirst=false
 \setkomafont{caption}{\normalsize} % needed because longtables with smaller text
   % have to be "surrounded" by \footnotesize groups, thus reducing caption sizes
 \renewcommand*{\bibfont}{\small}
+\renewcommand{\captionformat}{~}
 
 % Row spacing for booktabs tables
 \renewcommand{\arraystretch}{1.1}
@@ -301,6 +302,6 @@ hyperfirst=false
 \printbibliography
 
 \appendix
-\include{appendix_ssp1-narrative}
+\include{appendix_ssp1-summary-table}
 
 \end{document}
