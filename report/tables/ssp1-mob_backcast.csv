@@ -1,0 +1,39 @@
+"Variable or feature","Baseline (2017)","State (2050)","State (2100)"
+"Development scenario",,,
+"Societal sustainability awareness","Low (assumed)","Medium","High"
+"Total travel demand (Tpkm/yr)","approx. 50 Tpkm/yr\textsuperscript{1} in 2010 \parencite{vuuren}","Higher than the baseline (2017)","Higher than the baseline (2017)"
+"Travel demand per capita (Tpkm/yr)","approx. 7300 pkm/yr in 2010 \parencite{vuuren,kc}","Similar to the baseline (2017)","Lower than the baseline (2017)"
+"Land use (urban development)",,,
+"Urban density","approx. \parencite{cox}","Medium-high and increasing","High (higher than 2017 baseline)"
+"Urban use patterns","Single-use is widespread, mixed-use for cities","Mixed-use development paradigm","Mixed-use development paradigm"
+"Economic centralisation","High; metropolis accumulate a big share of the activity","High; metropolis accumulate a big share of the activity","Medium; cities are hotspots, but jobs are spread amongst them"
+"City sizes","8.4% >10M\textsuperscript{2}, 4.2% 5-10M, 5.4% 2.5-5M, 6.5% 1-2.5M, 4.8% 0.5-1M, 70.7% <0.5M \parencite{cox}","Medium to large; megacities and (sub)urban sprawl beginning to shrink","Medium; avoidance of megacities or (sub)urban sprawl"
+"Travel modes share",,,
+"Intermodal travel","Long distance (>100 km) travel is mostly (80%) by car. Intermodality is confined to urban and regional mobility. \parencite{riley}","Facilitated, but still not common","Facilitated, high acceptancy and usage"
+"Public transport (rail, bus, aviation)","40.17% share (pkm/yr) approx. from \parencite{vuuren}","Increasing demand supply; higher than the baseline (2017)","Majority of demand supply; much higher than the baseline (2017)"
+"Automobility (private vehicles)","35.90% share (pkm/yr) approx. from \parencite{vuuren}","Lower than the baseline (2017)","Still relevant, but much lower than the baseline (2017)"
+"Slow modes (walking and cycling)","23.93% share (pkm/yr) approx. from \parencite{vuuren}","Moderate increase compared to baseline (2017)","Higher than the baseline (2017)"
+"Cultural perception",,,
+"Mobility","Understood as a right and an individual-social emancipation mechanism (through tourism and recreational mobility) \parencite{sheller2008}","Accessibility as a focus, managed, reasonable travel time, integrated","Accessibility, local in scale, slowed down, managed, reasonable travel time and reliability, integrated"
+"Public transport","PT as an affordable solution, but marginal and regarded as a low-status form of mobility","Public mobility as an affordable and accessible service","Public mobility as a reliable, comfortable, enjoyable and accessible service"
+"Automobility","Shaped by structured stories of ``joy of driving'', freedom and individuality discourses \parencite{gartman,mimisheller}","Automobility fills accessibility gaps; symbolic status decreasing","Automobility as a utility to serve a special need"
+"Public transport",,,
+"Consumer cost","Medium-High (in many countries, public transport is not affordable for the 20% lowest-in-income population \parencite{carruthers})","Low","Low"
+"Accessibility","Low (assumed)","Medium-high","High"
+"Safety","Fatalities (EU): 993 railway (27 passengers, 34 employees, 932 other\textsuperscript{3}), 155 aviation, (2015) \parencite{ecstat}","High","High"
+"Public transport infrastructure investments","Rail: approx. 30% of total infrastructure investments in Europe (2010, average for WECs\textsuperscript{4} and CEECs\textsuperscript{4}) \parencite{kauppila}","High and continuous","High and continuous"
+"Automobility",,,
+"Consumer cost","Low-Medium (assumed)","Medium","High"
+"Accessibility","High (assumed)","High","High (especially in rural or remote areas)"
+"Safety","1.2M road deaths in the world, 28077 in the EU (2013) \parencite{whostat}","Medium (especially Low Income Countries)","High (higher risk than public transport)"
+"Automobility infrastructure investments","Roads: approx. 70% of total infrastructure investments in Europe (2010, average for WECs and CEECs) \parencite{kauppila}","Medium; maintenance dominates in HICs\textsuperscript{5}; capacity increased in LICs\textsuperscript{5}","Low to medium; maintenance covers the majority of the investments; capacity is not increased"
+"Fuel technology",,,
+"Automobiles","96% fossil fuels (oil products & natural gas), 4% biofuels \parencite{iea2017}","Battery electric vehicles and hybrids for short-medium ranged trips; biofuelled for long range","Battery electric vehicles for short-medium ranged trips; hydrogen fuelled for long range"
+"Rail","57.3% oil, 5.6% coal, 36.4% electricity \parencite{cazzola}","Full electrification of the network","Full electrification of the network"
+"Bus","96% fossil fuels (oil products & natural gas), 4% biofuels \parencite{iea2017}","Hybrid, or biofuelled","Electric or hydrogen-fuelled"
+"Aviation","100% fossil fuels \parencite{iea2017}","Renewable biofuels","Renewable biofuels"
+"\textsuperscript{1}Tpkm/yr stands for “tera passenger-kilometers per year”",,,
+"\textsuperscript{2}M stands for millions (population)",,,
+"\textsuperscript{3}Only 12% of the total 993 reported fatalities linked to rail in the EU were passengers or employees. The remaining 88% were people at, e.g., level-crossings or unauthorised people at rail premises \parencite{eurostat2017_Statistics}",,,
+"\textsuperscript{4}WECs: Western European Countries; CEECs: Central and Eastern European Countries",,,
+"\textsuperscript{5}HICs: High Income Countries; LICs: Low Income Countries (considered in terms of the baseline situation)",,,
