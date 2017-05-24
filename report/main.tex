@@ -27,6 +27,7 @@
 %\usepackage[top=1in,bottom=1.25in,left=1.25in,right=1.25in]{geometry}								% Custom margins (comment out if not needed)
 \usepackage[english]{babel}	% Language settings
 \usepackage{etoolbox}
+\usepackage{titlesec}
 \usepackage{lmodern} % Use Latin Modern font
 \usepackage[nointegrals]{wasysym}
 \usepackage{microtype} % Enhanced typesetting (better reading)
@@ -213,7 +214,7 @@ hyperfirst=false
 \setlength{\columnsep}{2em}
 
 % Enumerations and lists separation
-\setlist{nosep}
+%\setlist{itemsep=-0.25\parskip}
 
 % SI units range separator (en-dash)
 \sisetup{range-phrase=--}
@@ -223,10 +224,9 @@ hyperfirst=false
 \DeclareSIUnit{\person}{person}
 
 % Reduce space after sections
-%\usepackage{titlesec}
-%\titlespacing{\section}{0pt}{\parskip}{-0.5\parskip}
-%\titlespacing{\subsection}{0pt}{\parskip}{-0.5\parskip}
-%\titlespacing{\subsubsection}{0pt}{\parskip}{-0.5\parskip}
+\titlespacing{\section}{0pt}{\parskip}{-0.5\parskip}
+\titlespacing{\subsection}{0pt}{\parskip}{-0.5\parskip}
+\titlespacing{\subsubsection}{0pt}{\parskip}{-0.5\parskip}
 
 % Configuration of the blockquotes paragraphs
 \SetBlockThreshold{1} % all blockquotes of 1 or more lines are treated as blocks
