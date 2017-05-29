@@ -24,7 +24,7 @@
 % **************************************************************** %
 %                            Packages
 % **************************************************************** %
-%\usepackage[top=1in,bottom=1.25in,left=1.25in,right=1.25in]{geometry}								% Custom margins (comment out if not needed)
+\usepackage[top=1in,bottom=1.25in]{geometry} % Custom margins (comment out if not needed)
 \usepackage[english]{babel}	% Language settings
 \usepackage{etoolbox}
 \usepackage{titlesec}
@@ -141,6 +141,10 @@ hyperfirst=false
 	\todo[color=red!40,bordercolor=red,inline]{#1}}
 \newcommand{\todocomment}[1]{%
 	\todo[color=teal!40,bordercolor=teal,inline]{#1}}
+
+% MSc Thesis specific: format wrappers for CLD loop nomenclature
+\newcommand{\CLDloop}[1]{\textsf{\textbf{#1}}}
+\newcommand{\CLDvar}[1]{\textsf{#1}}
 
 \makeatother % **** **** **** **** **** **** MAKEATOTHER
 

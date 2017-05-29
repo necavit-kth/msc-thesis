@@ -1,81 +1,101 @@
-This section is devoted to the investigation of the feedback structure that supports and shapes the system of automobility. \todonote{Perhaps this explanation of \emph{``why cars?''} could be in another chapter: methods? Introduction?}The choice of this particular transport mode is based on two arguments: first, the clear dominance of the automobile as the main mode of transport globally (travel demand) and second, the huge inertia, complexity and stability that the system has historically posed against threats to its dominance, e.g., the 1970s oil crisis, the ``dieselgate'' scandal\footnote{``Dieselgate'' refers to the Volkswagen emissions scandal that started in September 2015, when the U.S. Environmental Protection Agency reported that the German automotive industrial group had been faking emission control tests. This caused the \ce{NO_X} output to be lower in the certification tests than in real-world driving scenarios, thus being able to meet U.S. and European emission standards.} \parencite{guardian2017_Volkswagenrevealsrecord}, or even the 2008 global financial crisis. \fref{f:results:global-passenger-car-production} shows the global production of cars from 1961 to 2015, clearly depicting the effects of the financial crisis, whilst acknowledging that production has kept increasing nevertheless.
+This section is devoted to the investigation of the feedback structure that supports and shapes the system of automobility. \todonote{Perhaps this explanation of \emph{``why cars?''} could be in another chapter: methods? Introduction?}The choice of studying this particular transport mode is based on a triad of arguments: (a) the clear dominance of the automobile as the main mode of transport globally (in terms of travel demand), (b) the huge inertia, complexity and stability that the system has historically posed against threats to its dominance and (c) the fact that this dominance and resilience have become an obstacle for modal shifts, or more generally, a transition to sustainable mobility. Therefore, it is worth it to take a closer look at the dynamics that secure the position of automobility in its current status.
+
+As an example of the automobility resilience, the system has ``survived'' the 1970s oil crisis, the ``dieselgate'' scandal\footnote{``Dieselgate'' refers to the Volkswagen emissions scandal that started in September 2015, when the U.S. Environmental Protection Agency reported that the German automotive industrial group had been faking emission control tests. This caused the \ce{NO_X} output to be lower in the certification tests than in real-world driving scenarios, thus being able to meet U.S. and European emission standards.} \parencite{guardian2017_Volkswagenrevealsrecord}, or even the 2008 global financial crisis. \fref{f:results:global-passenger-car-production} shows the global production of cars from 1961 to 2015, clearly depicting the effects of the financial crisis, whilst acknowledging that production has kept increasing nevertheless.
 %
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.85\textwidth]{figures/line_global-car-sales.pdf}
-\label{f:results:global-passenger-car-production}
 \caption[Global passenger cars production 1961-2015.]{Global passenger car production 1961-2015. Source: own figure; original data from \textcite{bts2017_Table123}.}
+\label{f:results:global-passenger-car-production}
 \end{figure}
 
-As already mentioned in the \nameref{c:methods} chapter, the study of the feedback structures of the system, detailed in the following subsections, is carried out through a series of Causal Loop Diagrams (CLD). Because of the resilient nature of the automobility regime, the collection of CLDs that form the overview of the system is referred to as the AUTOLOCK model. \ssref{ss:results:cld_urban-planning} discusses the stability mechanisms of automobility from an urban planning (land use) perspective. The cultural basis and legitimacy apparatus of automobility is described in \ssref{ss:results:cld_cultural-feedbacks}. \ssref{ss:results:cld_public-transport-automobility} provides a (partial) explanation of how automobility displaces public transport and vice-versa. Finally, \todonote{Talk about PLPs}
+As already mentioned in the \nameref{c:methods} chapter, the study of certain feedback structures of the system, detailed in the following subsections, is carried out through a series of Causal Loop Diagrams (CLD). Because of the resilient nature of the automobility regime, the collection of CLDs that form the overview of the system is referred to as the AUTOLOCK model. \ssref{ss:results:cld_urban-planning} discusses the stability mechanisms of automobility from an urban planning (land use) perspective. Next, the cultural basis and legitimacy apparatus of automobility is described in \ssref{ss:results:cld_cultural-feedbacks}.
+% This section was removed Finally, \ssref{ss:results:cld_public-transport-automobility} provides a (partial) explanation of how automobility displaces public transport and vice-versa.
+
+\textbf{Note:} with regards to notation: (a) CLD variables are denoted by a different font face, such as \CLDvar{This Example} and (b) causal loop (\emph{reinforcing} or \emph{balancing}) are denoted by the labels assigned in the diagrams, as in \CLDloop{R1}.
+
+\todoparagraph{(OPTIONAL?)For each of the perspectives studied in the following subsections, a series of \glspl{PLP} are considered. This is, policy intervention is discussed on the basis of where in the feedback structure policy has the potential to be effective, avoiding policy resistance as much as possible.}
 
 \subsection{Urban planning and automobility}
 \label{ss:results:cld_urban-planning}
+Historically, automobility is linked to the development of road infrastructure on one side and on cultural discourses that legitimise the adoption of private mobility on the other \parencite{goodwin2012_ProvidingRoadCapacity,gartman2004_ThreeAgesAutomobile,sheller2012_EmergenceNewCultures}. \fref{f:results:cld_congestion_1} shows the core reinforcing mechanism of automobility, which is founded on the mobility possibilities it supports, through increased \CLDvar{Accessibility} due to augmented \CLDvar{Road capacity}. Higher \CLDvar{Automobility demand} drives higher \CLDvar{Congestion}, putting pressure for more \CLDvar{Road investments}. \CLDvar{Accessibility}, coupled to a cultural background based on ideals of freedom, is seen as a major enabler for climbing up the social ladder, thus increasing \CLDvar{Automobile ownership} and closing the \CLDloop{R1} reinforcing loop --- the \emph{Automobility freedom} loop. With regards to the \CLDloop{R2} reinforcing loop, it accounts for a well-known rebound effect of motorway capacity expansion: induced travel demand \parencite{hymel2010_Induceddemandrebound,thill2005_Tripmakinginduced}. Most importantly, the cultural framework, represented by \CLDvar{Cultural legitimacy of automobility}, ultimately legitimises and supports these feedback structures.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\textwidth]{figures/model/cropped/congestion-urban_1_core.pdf}
+\caption{AUTOLOCK socio-spatial perspective: freedom and congestion.}
 \label{f:results:cld_congestion_1}
-\caption[AUTOLOCK socio-spatial perspective: freedom and congestion]{AUTOLOCK socio-spatial perspective. The core reinforcing mechanism of automobility is the mobility possibilities it supports, through increased accessibility --- the \emph{Automobility freedom} (\textbf{R1}). The spiralling congestion caused by increased capacity (rebound effect, \textbf{R2}) and diffusion of this technology (higher ownership) reinforces the efforts to enhance the system (higher road investments). Most importantly, the cultural framework ultimately legitimises and supports these feedback structures.}
 \end{figure}
+
+The increased accessibility provided by the ubiquitous construction (and expansion) of roads, coupled with low fuel/vehicle prices stirs the development of suburbs and causes a focus shift from the planning perspective, from integrated areas towards car-based single-use ones: the \CLDvar{Single-use urban development} variable in \fref{f:results:cld_congestion_2}. \CLDvar{Automobility demand} grows to meet the new requirements derived from the suburban lifestyle, namely the increase in spatial separation of jobs, housing, commercial and recreational areas; in other words, \CLDvar{Average travel distance}. Due to the low population density found in single-use urban developments, public transport becomes infeasible and expensive to maintain. Thus, the automobile rises as the single viable alternative for the residents of the suburbs, closing the \CLDloop{R3} reinforcing loop of \emph{automobility dependence}. This particular feature of the automobile system is particularly relevant for the focus of the present study. Automobility dependence locks in automobile users, planners, developers, etc. within the system practices space and forces them to adapt their lifestyles to this form of mobility \parencite{cullinane2003_Cardependencepublic,koehler2009_transitionsmodelsustainable}\footnote{The concept of \emph{practice space} is used by \textcite{koehler2009_transitionsmodelsustainable} to represent transport alternatives (including automobility) in their modelling and simulation of a sustainable transition.}.
+
+Even though many cities worldwide have begun taking efforts to reduce automobile dependency (and have been doing so for years), it is critical to understand that the existing infrastructure, the huge sunk investments that have been brought into such infrastructure and the overall spatial organisation of residential, commercial and working areas has been built over many decades --- the inertia that these developments have is enormous \parencite{geels2012_AutomobilityTransitionSocio}. Not only because of the large amounts of resources that are needed to re-shape roads, cities and suburbs globally, but because the lifestyle that automobility is tied to has become deeply entrenched in cultural frameworks (as discussed in \sref{s:results:backcasting-ssp1-mob} and \ssref{ss:results:cld_cultural-feedbacks}).
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{figures/model/cropped/congestion-urban_2_dependency.pdf}
+\caption{AUTOLOCK socio-spatial perspective: building automobile dependence.}
 \label{f:results:cld_congestion_2}
-\caption[AUTOLOCK socio-spatial perspective: freedom and congestion]{AUTOLOCK socio-spatial perspective.}
 \end{figure}
 
-\begin{figure}
+Finally, \fref{f:results:cld_congestion_3} presents additional balancing loops that restraint the further growth of mobility: some of them are endogenous, while some others (\CLDloop{B2} and \CLDloop{B3}) are exogenous\footnote{\emph{Endogenous} refers to dynamics arising from the inner-workings of the system or to actions to support it (single-use planning), while \emph{exogenous} refers to external measures/policies intended to counteract automobility use.}. For instance, \CLDvar{Average travel time} is an important factor contributing to the perceived accessibility that automobiles provide. If, due to congestion or longer travel distances, the time spent is excessive, the user might not find it convenient (accessible) to drive around. \CLDloop{B1} captures this phenomenon. When \CLDvar{Demand management policies} (e.g., road pricing) are introduced, another balancing feedback is produced, creating the \CLDloop{B2} loop \parencite{banister2008_sustainablemobilityparadigm,dudley2012_DynamicsRegimeStrength}.
+
+Furthermore, the use of \CLDvar{Mixed-use urban development} techniques reduces, with time, the \CLDvar{Average travel distance}, thus alleviating the pressure on \CLDvar{Automobility demand}, portrayed in the \CLDloop{B3} balancing loop. However, the mutual exclusivity between mixed and single-use development patterns found in many regulatory frameworks \parencite{hirt2007_DevilIsDefinitions} means that they are in direct competition: if one planning practice increases, the other decreases and vice-versa. This feature is captured by the reinforcing loop \CLDloop{R5}. Finally, in a similar fashion to \CLDloop{B1}, another balancing force opposes the absolute dominance of automobiles: if suburbs grow in size and extension, not only time, but \CLDvar{Average travel distance} increases, thus reducing the perceived \CLDvar{Accessibility}, giving rise to \CLDloop{B4}.
+
+\begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{figures/model/cropped/congestion-urban_3_final.pdf}
+\caption{AUTOLOCK socio-spatial perspective: balancing forces.}
 \label{f:results:cld_congestion_3}
-\caption[AUTOLOCK socio-spatial perspective: freedom and congestion]{AUTOLOCK socio-spatial perspective.}
 \end{figure}
 
-\subsection{Cultural feedbacks}
+\subsection{Cultural legitimacy feedbacks}
 \label{ss:results:cld_cultural-feedbacks}
+A highly relevant issue to discuss, with respect to the cultural dimension of automobility, is the legitimacy apparatus that supports it and, at the same time, dis-legitimises other forms of mobility (public transport, cycling, etc.). Due to the limitations in the scope of this study, only this central aspect will be analysed, since the range of practices and discourses that form the body of the automobility culture is huge. Therefore, this subsection is aimed at revealing the dynamics behind the \emph{acceptance} of automobility as a cultural reality.
+
+\fref{f:results:cld_culture_1} draws from the CLD diagram in the previous section. The core reinforcing mechanism that drives \CLDvar{Automobility demand} growth (\CLDloop{R1}), is based on the \CLDvar{Cultural legitimacy of automobility}. However, unlike the CLD model in \ssref{ss:results:cld_urban-planning}, cultural legitimacy is not an external (supporting) force, but rather an integral part of the \emph{Freedom to move} discourse that sustains \CLDloop{R1}. The \CLDvar{Automobility capacity} variable is meant as the user's perception of the potential to access more destinations (accessibility) through better, uncongested roads (road capacity). Therefore, \CLDvar{Automobility capacity} is directly and proportionally linked to cultural legitimacy, since the perception of a higher ``degree of freedom'' reinforces the belief (the legitimacy) that automobility is the \emph{right} alternative to choose. However, there is a clear precondition that must hold to support this legitimacy dynamic: an framing \CLDvar{Discourse on individual freedom} as the highest (moral) value in the values hierarchy \parencite{urry2004_SystemAutomobility,boehm2006_PartOneConceptualizing,sheller2008_MobilityFreedomPublic}.
+
+Secondly, \fref{f:results:cld_culture_1} shows another reinforcing loop, \CLDloop{R2}, that also contributes to increasing the \CLDvar{Cultural legitimacy of automobility}. It does so by providing the necessary lifestyle satisfaction (beyond the realisation of \emph{freedom}). Increased \CLDvar{Automobility capacity} enables the fulfilment of activities that (have) become embedded in the lifestyle: practices such as commuting, car-based grocery shopping, chauffeuring family members, weekend and holidays car-based tourism, etc. It is then important to understand that a lifestyle is a meaning carrier. Lifestyles are used to express one's identity, a ``narrative of the self''. Lifestyles are made of behaviours, conducts and practices that are adopted beyond their utility: they shape the individual's identity \parencite{giddens1991_ModernitySelfIdentity,spaargaren2000_Lifestylesconsumptionenvironment}. \CLDvar{Lifestyle satisfaction} then becomes the main mechanism to achieve a \CLDvar{Sense of individual identity} \parencite{ropke1999_dynamicswillingnessconsume}, closing the \CLDloop{R2} reinforcing loop, labelled as \emph{Seek for identity}.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\textwidth]{figures/model/cropped/cultural_1_core.pdf}
+\caption{AUTOLOCK cultural legitimacy perspective}
 \label{f:results:cld_culture_1}
-\caption[]{}
 \end{figure}
+
+
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\textwidth]{figures/model/cropped/cultural_2_class-relations.pdf}
-\label{f:results:cld_culture_2}
+\includegraphics[width=\textwidth]{figures/model/cropped/cultural_2_subcultures.pdf}
 \caption[]{}
+\label{f:results:cld_culture_2}
 \end{figure}
 
 \begin{figure}
 \includegraphics[width=1.2\textwidth,center]{figures/model/cropped/cultural_3_final.pdf}
+\caption[]{}
 \label{f:results:cld_culture_3}
-\caption[]{}
 \end{figure}
 
-\subsection{Public transport vs. Automobility}
-\label{ss:results:cld_public-transport-automobility}
-
-\begin{figure}[h]
-\includegraphics[width=1.1\textwidth,center]{figures/model/cropped/public-transport_1_core.pdf}
-\label{f:results:cld_pt_1}
-\caption[]{}
-\end{figure}
-
-\begin{figure}[h]
-\includegraphics[width=1.1\textwidth,center]{figures/model/cropped/public-transport_2_trust.pdf}
-\label{f:results:cld_pt_2}
-\caption[]{}
-\end{figure}
-
-\begin{figure}
-\includegraphics[width=1.2\textwidth,center]{figures/model/cropped/public-transport_3_final.pdf}
-\label{f:results:cld_pt_3}
-\caption[]{}
-\end{figure}
-
-\subsection{Identification of Policy Leverage Points}
-\label{ss:results:cld_policy-leverage-points}
+%\subsection{Public transport vs. Automobility}
+%\label{ss:results:cld_public-transport-automobility}
+%\todowarning{Is this section even necessary? What does it convey? Is there a way to incorporate stuff into the first CLD?}
+%\begin{figure}[h]
+%\includegraphics[width=1.1\textwidth,center]{figures/model/cropped/public-transport_1_core.pdf}
+%\caption[]{}
+%\label{f:results:cld_pt_1}
+%\end{figure}
+%
+%\begin{figure}[h]
+%\includegraphics[width=1.1\textwidth,center]{figures/model/cropped/public-transport_2_trust.pdf}
+%\caption[]{}
+%\label{f:results:cld_pt_2}
+%\end{figure}
+%
+%\begin{figure}
+%\includegraphics[width=1.2\textwidth,center]{figures/model/cropped/public-transport_3_final.pdf}
+%\caption[]{}
+%\label{f:results:cld_pt_3}
+%\end{figure}
