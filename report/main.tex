@@ -24,7 +24,7 @@
 % **************************************************************** %
 %                            Packages
 % **************************************************************** %
-\usepackage[top=1in,bottom=1.25in]{geometry} % Custom margins (comment out if not needed)
+\usepackage[top=1in,bottom=1.5in]{geometry} % Custom margins (comment out if not needed)
 \usepackage[english]{babel}	% Language settings
 \usepackage{etoolbox}
 \usepackage{titlesec}
@@ -197,6 +197,9 @@ hyperfirst=false
 % **************************************************************** %
 %                               Format
 % **************************************************************** %
+% Stupid LaTeX breaks some footnotes, even when they are just 2 lines ¬¬
+\interfootnotelinepenalty=10000
+
 % Koma Script font modifications
 \setkomafont{author}{\small}
 \setkomafont{date}{\scshape}
