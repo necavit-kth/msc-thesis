@@ -231,9 +231,12 @@ hyperfirst=false
 \DeclareSIUnit{\person}{person}
 
 % Reduce space after sections
-\titlespacing{\section}{0pt}{\parskip}{-0.5\parskip}
-\titlespacing{\subsection}{0pt}{\parskip}{-0.5\parskip}
-\titlespacing{\subsubsection}{0pt}{\parskip}{-0.5\parskip}
+\RedeclareSectionCommands[
+	afterskip=0.2pt
+]{section,subsection,subsubsection}
+%\titlespacing{\section}{0pt}{\parskip}{-0.5\parskip}
+%\titlespacing{\subsection}{0pt}{\parskip}{-0.5\parskip}
+%\titlespacing{\subsubsection}{0pt}{\parskip}{-0.5\parskip}
 
 % Configuration of the blockquotes paragraphs
 \SetBlockThreshold{1} % all blockquotes of 1 or more lines are treated as blocks
