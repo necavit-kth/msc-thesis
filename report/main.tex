@@ -248,13 +248,8 @@ hyperfirst=false
 % Glossaries (acronyms) files
 \makeglossaries % BEFORE the inclusion of glossaries
 
-% Redefine glossaries so that the first entry is hyperlinked but not
-% subsequent appearances
-\renewcommand{\glsentryfmt}{%
-  \ifglsused{\glslabel}
-    {\glsgenentryfmt}% entry has been used.
-    {\glshyperlink[\glsgenentryfmt]{\glslabel}}% entry hasn't been used
-}
+% Disable hyperlinks in the glossaries
+\glsdisablehyper
 
 % Load glossary file (acronyms, etc.)
 \input{glossary}
