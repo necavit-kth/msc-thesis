@@ -4,7 +4,6 @@
 % Class of the document: KOMA Script Report
 %   Options: 12 points font, A4 paper, bibliography in ToC
 \documentclass[
-	draft,
 	a4paper,
 	11pt,
 	bibliography=totoc,
@@ -83,11 +82,11 @@ hypertexnames=true,
 plainpages=false,
 hidelinks=false,
 colorlinks=true,
-citecolor=DeepSkyBlue4,
+citecolor=DeepSkyBlue4!80!black,
 filecolor=black,
-linkcolor=DeepSkyBlue4, %DeepSkyBlue4!50!black,
-urlcolor=DeepSkyBlue4,
-anchorcolor=DeepSkyBlue4
+linkcolor=DeepSkyBlue4!80!black, %DeepSkyBlue4!50!black,
+urlcolor=DeepSkyBlue4!80!black,
+anchorcolor=DeepSkyBlue4!80!black
 }
 \usepackage[
 acronym,
@@ -269,7 +268,6 @@ hyperfirst=false
 
 	% Hijacked \date command to add course information
 \date{
-	\todowarning{!!! Turn this into the generated KTH cover and back pages !!!}
 	\textsc{\thesisCourseCode~MSc Thesis}\\
   	\textsc{\departmentFull}\\
 	\textsc{\academicTerm}\\[0.5cm]
@@ -287,13 +285,14 @@ hyperfirst=false
 % Front matter: abstract, table of contents, acknowledgements...
 %   !they are all Roman numbered!
 \frontmatter
-%\include{abstract}
+\include{abstract}
+\setcounter{tocdepth}{1}
 \tableofcontents % Content Index
 \listoffigures
 \listoftables
-\printglossary[type=\acronymtype,title={\acronymsTOCTitle}]
-\todototoc %should be placed right before the \listoftodos command
-{\footnotesize \listoftodos}
+%\printglossary[type=\acronymtype,title={\acronymsTOCTitle}]
+%\todototoc %should be placed right before the \listoftodos command
+%{\footnotesize \listoftodos}
 
 % Main matter: the actual content of the report
 \mainmatter
@@ -302,17 +301,6 @@ hyperfirst=false
 \include{chapters/results}
 \include{chapters/discussion}
 \include{chapters/conclusion}
-
-%TODO delete this page!!
-\pagebreak
-\todowarning{Link colours}
-\todowarning{Bibliography check}
-\todowarning{ToC check: how many pages?}
-\todowarning{Front page: KTH}
-\todowarning{Remove all TODOs}
-\todowarning{Delete the TODO list from the document}
-\todowarning{Delete this page in main.tex}
-\pagebreak
 
 % Back matter: references and appendices
 \backmatter
