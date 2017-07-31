@@ -23,7 +23,7 @@
 % **************************************************************** %
 %                            Packages
 % **************************************************************** %
-\usepackage[top=1in,bottom=1.5in]{geometry} % Custom margins (comment out if not needed)
+%\usepackage[top=1in,bottom=1.5in]{geometry} % Custom margins (comment out if not needed)
 \usepackage[english]{babel}	% Language settings
 \usepackage{etoolbox}
 \usepackage{titlesec}
@@ -52,6 +52,7 @@
 \usepackage[font=small,labelfont=bf]{caption}
 \usepackage{pdflscape} % Rotate pages (for wide pages)
 \usepackage{subcaption}
+\usepackage{pdfpages}
 \usepackage{nameref}	% Allows references by name ("Section 5" vs "Conclusions")
 \usepackage{lipsum} % Lorem ipsum
 \usepackage[framemethod=TikZ]{mdframed} % Info boxes
@@ -279,15 +280,21 @@ hyperfirst=false
 % **************************************************************** %
 \begin{document}
 % Title page
-\maketitle
+\includepdf{kth_cover.pdf}
+\includepdf[pages=-]{kth_indecol_after-cover.pdf}
 \thispagestyle{empty}
 
 % Front matter: abstract, table of contents, acknowledgements...
 %   !they are all Roman numbered!
 \frontmatter
+\include{quotation} % Remarkable quotation, by someone you like
 \include{abstract}
+\include{acknowledgements}
+\include{foreword}
 \setcounter{tocdepth}{1}
-\tableofcontents % Content Index
+\renewcommand{\baselinestretch}{0.9}\normalsize
+\tableofcontents
+\renewcommand{\baselinestretch}{1.0}\normalsize
 \listoffigures
 \listoftables
 %\printglossary[type=\acronymtype,title={\acronymsTOCTitle}]
@@ -311,5 +318,6 @@ hyperfirst=false
 
 \appendix
 %\include{appendix_ssp1-summary-table} %Rajib said not to include this!
+\includepdf{kth_aftercover.pdf}
 
 \end{document}
